@@ -40,48 +40,6 @@
   ],
   "modules": [
     {
-      "name": "libXScrnSaver",
-      "config-opts": [
-        "--disable-static"
-      ],
-      "sources": [
-        {
-          "type": "archive",
-          "url": "https://www.x.org/releases/individual/lib/libXScrnSaver-1.2.2.tar.bz2",
-          "sha256": "8ff1efa7341c7f34bcf9b17c89648d6325ddaae22e3904e091794e0b4426ce1d"
-        }
-      ]
-    },
-    {
-      "name": "libsecret",
-      "config-opts": [
-        "--disable-manpages",
-        "--disable-gtk-doc",
-        "--disable-static",
-        "--disable-introspection"
-      ],
-      "cleanup": [
-        "/bin",
-        "/include",
-        "/lib/pkgconfig",
-        "/share/gtk-doc",
-        "*.la"
-      ],
-      "sources": [
-        {
-          "type": "archive",
-          "url": "https://ftp.gnome.org/pub/GNOME/sources/libsecret/0.18/libsecret-0.18.6.tar.xz",
-          "sha256": "5efbc890ba41a323ffe0599cd260fd12bd8eb62a04aa1bd1b2762575d253d66f"
-        },
-        {
-          "type": "shell",
-          "commands": [
-            "autoreconf -f"
-          ]
-        }
-      ]
-    },
-    {
       "name": "xkbfile",
       "cleanup": [
         "/include",
