@@ -90,14 +90,41 @@
       ]
     },
     {
+      "name": "git",
+      "make-args": ["NO_PERL=1"],
+      "make-install-args": ["NO_PERL=1"],
+      "sources": [
+        {
+          "type": "archive",
+          "url": "https://www.kernel.org/pub/software/scm/git/git-2.18.0.tar.xz",
+          "sha256": "8b40be383a603147ae29337136c00d1c634bdfdc169a30924a024596a7e30e92"
+        }
+      ]
+    },
+    {
+      "name": "git-lfs",
+      "buildsystem": "simple",
+      "build-commands": [
+        "mkdir --parents /app/libexec/git-core/",
+        "install -Dm0755 git-lfs /app/libexec/git-core/"
+      ],
+      "sources": [
+        {
+          "type": "archive",
+          "url": "https://github.com/git-lfs/git-lfs/releases/download/v2.4.2/git-lfs-linux-amd64-2.4.2.tar.gz",
+          "sha256": "29529b6c7afb5f656860d5fad7c054baaeded95ecbda040592a58dbcdbb38fe0"
+        }
+      ]
+    },
+    {
       "name": "gitkraken",
       "buildsystem": "simple",
       "build-commands": [
-        "install -Dm755 apply_extra /app/bin/apply_extra",
-        "install -Dm755 gitkraken.sh /app/bin/gitkraken",
-        "install -Dm644 com.axosoft.GitKraken.png /app/share/icons/hicolor/512x512/apps/com.axosoft.GitKraken.png",
-        "install -Dm644 com.axosoft.GitKraken.appdata.xml /app/share/appdata/com.axosoft.GitKraken.appdata.xml",
-        "install -Dm644 gitkraken.desktop /app/share/applications/com.axosoft.GitKraken.desktop"
+        "install -Dm0755 apply_extra /app/bin/apply_extra",
+        "install -Dm0755 gitkraken.sh /app/bin/gitkraken",
+        "install -Dm0644 com.axosoft.GitKraken.png /app/share/icons/hicolor/512x512/apps/com.axosoft.GitKraken.png",
+        "install -Dm0644 com.axosoft.GitKraken.appdata.xml /app/share/appdata/com.axosoft.GitKraken.appdata.xml",
+        "install -Dm0644 gitkraken.desktop /app/share/applications/com.axosoft.GitKraken.desktop"
       ],
       "sources": [
         {
