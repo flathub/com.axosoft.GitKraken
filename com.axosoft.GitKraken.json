@@ -110,6 +110,7 @@
       "sources": [
         {
           "type": "archive",
+          "strip-components": 0,
           "url": "https://github.com/git-lfs/git-lfs/releases/download/v2.5.1/git-lfs-linux-amd64-v2.5.1.tar.gz",
           "sha256": "9565fa9c2442c3982567a3498c9352cda88e0f6a982648054de0440e273749e7"
         }
