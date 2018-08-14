@@ -160,9 +160,9 @@
           "only-arches": [
             "x86_64"
           ],
-          "url": "https://release.gitkraken.com/linux/v3.6.6.tar.gz",
-          "sha256": "3d3b80d9ed620159abdb08e6f70d5a84d282f11ca6a8acb24ed99be3d71032a2",
-          "size": 90193143
+          "url": "https://release.gitkraken.com/linux/v4.0.1.tar.gz",
+          "sha256": "ac9435f0d359290c3000da15f32ccc5dd6f8d66057a82337592499476069de0d",
+          "size": 108330098
         }
       ]
     }
