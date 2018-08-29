@@ -1,10 +1,10 @@
 {
   "id": "com.axosoft.GitKraken",
   "runtime": "org.freedesktop.Platform",
-  "runtime-version": "1.6",
+  "runtime-version": "18.08",
   "sdk": "org.freedesktop.Sdk",
   "base": "io.atom.electron.BaseApp",
-  "base-version": "stable",
+  "base-version": "18.08",
   "command": "gitkraken",
   "tags": [
     "proprietary"
@@ -41,24 +41,6 @@
   ],
   "modules": [
     {
-      "name": "libxkbfile",
-      "cleanup": [
-        "/include",
-        "/lib/*.la",
-        "/lib/pkgconfig"
-      ],
-      "config-opts": [
-        "--disable-static"
-      ],
-      "sources": [
-        {
-          "type": "archive",
-          "url": "https://www.x.org/releases/individual/lib/libxkbfile-1.0.9.tar.bz2",
-          "sha256": "51817e0530961975d9513b773960b4edd275f7d5c72293d5a151ed4f42aeb16a"
-        }
-      ]
-    },
-    {
       "name": "libcurl-gnutls",
       "config-opts": [
         "--disable-ldap",
@@ -90,8 +72,11 @@
     },
     {
       "name": "git",
-      "make-args": ["NO_PERL=1"],
-      "make-install-args": ["NO_PERL=1"],
+      "make-args": ["NO_TCLTK=YesPlease"],
+      "make-install-args": ["NO_TCLTK=YesPlease"],
+      "post-install": [
+        "find . -type f -name perllocal.pod -delete"
+      ],
       "sources": [
         {
           "type": "archive",
