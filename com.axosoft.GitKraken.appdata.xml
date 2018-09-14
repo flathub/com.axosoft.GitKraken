@@ -22,6 +22,7 @@
         <category>RevisionControl</category>
     </categories>
     <releases>
+        <release date="2018-09-14" version="4.0.3"/>
         <release date="2018-08-23" version="4.0.2"/>
         <release date="2018-08-14" version="4.0.1"/>
         <release date="2018-07-12" version="3.6.6"/>
