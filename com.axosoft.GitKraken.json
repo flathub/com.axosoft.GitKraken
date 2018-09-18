@@ -80,8 +80,8 @@
       "sources": [
         {
           "type": "archive",
-          "url": "https://www.kernel.org/pub/software/scm/git/git-2.18.0.tar.xz",
-          "sha256": "8b40be383a603147ae29337136c00d1c634bdfdc169a30924a024596a7e30e92"
+          "url": "https://mirrors.edge.kernel.org/pub/software/scm/git/git-2.19.0.tar.xz",
+          "sha256": "180feff58fc0d965d23ea010aa2c69ead92ec318eb9b09cf737529aec62f3ef4"
         }
       ]
     },
@@ -96,8 +96,8 @@
         {
           "type": "archive",
           "strip-components": 0,
-          "url": "https://github.com/git-lfs/git-lfs/releases/download/v2.5.1/git-lfs-linux-amd64-v2.5.1.tar.gz",
-          "sha256": "9565fa9c2442c3982567a3498c9352cda88e0f6a982648054de0440e273749e7"
+          "url": "https://github.com/git-lfs/git-lfs/releases/download/v2.5.2/git-lfs-linux-amd64-v2.5.2.tar.gz",
+          "sha256": "624396e8994578ac38c3e5987889be56dba453c378c0675d56cffbc5b8972aa5"
         }
       ]
     },
@@ -145,9 +145,9 @@
           "only-arches": [
             "x86_64"
           ],
-          "url": "https://release.gitkraken.com/linux/GitKraken-v4.0.3.tar.gz",
-          "sha256": "1f433734e1665571a18108360523bc9d3a812d5ac576804f22c14d423d007db1",
-          "size": 106407580
+          "url": "https://release.gitkraken.com/linux/GitKraken-v4.0.4.tar.gz",
+          "sha256": "d02a8e3eeeb32c16d9921a63974fcdf0d4e2654cdc5db7cfde95f633ac80ff78",
+          "size": 106403611
         }
       ]
     }
