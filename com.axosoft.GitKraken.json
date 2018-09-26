@@ -145,9 +145,9 @@
           "only-arches": [
             "x86_64"
           ],
-          "url": "https://release.gitkraken.com/linux/GitKraken-v4.0.4.tar.gz",
-          "sha256": "d02a8e3eeeb32c16d9921a63974fcdf0d4e2654cdc5db7cfde95f633ac80ff78",
-          "size": 106403611
+          "url": "https://release.gitkraken.com/linux/GitKraken-v4.0.5.tar.gz",
+          "sha256": "70511a1c7b255ee8769e857d0d7a2529f8213f8636a5e8b18e24cc318728192b",
+          "size": 106407271
         }
       ]
     }
