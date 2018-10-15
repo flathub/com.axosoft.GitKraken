@@ -19,7 +19,8 @@
     "--share=network",
     "--device=dri",
     "--filesystem=host",
-    "--talk-name=org.freedesktop.secrets"
+    "--talk-name=org.freedesktop.secrets",
+    "--env=LD_LIBRARY_PATH=/app/lib"
   ],
   "cleanup": [
     "/include",
