@@ -19,8 +19,7 @@
     "--share=network",
     "--device=dri",
     "--filesystem=host",
-    "--talk-name=org.freedesktop.secrets",
-    "--env=LD_LIBRARY_PATH=/app/lib"
+    "--talk-name=org.freedesktop.secrets"
   ],
   "cleanup": [
     "/include",
@@ -140,9 +139,9 @@
           "only-arches": [
             "x86_64"
           ],
-          "url": "https://release.gitkraken.com/linux/GitKraken-v4.0.5.tar.gz",
-          "sha256": "70511a1c7b255ee8769e857d0d7a2529f8213f8636a5e8b18e24cc318728192b",
-          "size": 106407271
+          "url": "https://release.gitkraken.com/linux/GitKraken-18.04-v4.0.6.tar.gz",
+          "sha256": "41d5030cc2249519fedfc2b927c78ddba064c863db0195a3790fc3c9d95f7f7a",
+          "size": 94810844
         }
       ]
     }
