@@ -15,6 +15,19 @@
             supported by Axosoft, LLC.</p>
     </description>
     <launchable type="desktop-id">com.axosoft.GitKraken.desktop</launchable>
+
+    <screenshots>
+        <screenshot type="default">
+            <image>https://dashboard.snapcraft.io/site_media/appmedia/2018/11/GraphMove_yqKqCq8.gif</image>
+        </screenshot>
+        <screenshot>
+            <image>https://dashboard.snapcraft.io/site_media/appmedia/2018/11/MergeConflict_04Schlp.gif</image>
+        </screenshot>
+        <screenshot>
+            <image>https://dashboard.snapcraft.io/site_media/appmedia/2018/11/pull-requests_1oUC7KR.png</image>
+        </screenshot>
+    </screenshots>
+
     <categories>
         <category>GNOME</category>
         <category>GTK</category>
