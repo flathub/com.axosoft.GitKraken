@@ -4,18 +4,58 @@
     <name>GitKraken</name>
     <project_license>LicenseRef-proprietary</project_license>
     <developer_name>Axosoft</developer_name>
-    <summary>Unleash your repo.</summary>
+    <summary>For repo management, in-app code editing &amp; issue tracking.</summary>
     <metadata_license>CC0-1.0</metadata_license>
+
     <url type="homepage">https://www.gitkraken.com/</url>
     <url type="help">https://www.gitkraken.com/contact</url>
 
     <description>
-        <p>The best Git client should integrate with your Git hosting service.
-            That’s why GitKraken connects to popular services like GitHub, Bitbucket and GitLab to make working
-            with your remote repositories easier.</p>
         <p>NOTE: This wrapper is not verified by, affiliated with, or
             supported by Axosoft, LLC.</p>
+
+        <p>Git legendary, my friends.
+            GitKraken includes two legendary products that make devs more productive: the Git Client and Glo Boards!</p>
+        <p>Use the Git Client to visualize the history and changes to your repos in a beautiful graph that makes working with Git more intuitive.</p>
+
+        <p>GitKraken Git Client Features:</p>
+        <ul>
+            <li>See your branching, merging and commit history in a dark or light themed graph.</li>
+            <li>Simplify complicated commands like merge, rebase and push into drag and drop actions.</li>
+            <li>Integrate with GitHub, GitHub Enterprise, GitLab, GitLab Self-Hosted, Bitbucket and VSTS.</li>
+            <li>Create, clone and add remote repos from integrated services.</li>
+            <li>Create and view pull requests from integrated services.</li>
+            <li>Easily open repos, set favorites, and organize them in project groups.</li>
+            <li>View file history and blame.</li>
+            <li>Quickly undo or redo with one click.</li>
+            <li>Use the built-in code editor to directly edit files without switching tools.</li>
+            <li>While editing code, use diff split view, syntax highlighting and search files.</li>
+            <li>Resolve merge conflicts without ever leaving the app.</li>
+            <li>Use multiple profiles for work and personal projects.</li>
+            <li>Use Gitflow, Git Hooks, LFS and submodules.</li>
+        </ul>
+
+        <p>GitKraken Glo Boards Features:</p>
+        <ul>
+            <li>Reduce context switching, and use Glo Boards to help your dev team track tasks and issues from inside the GitKraken Git Client.</li>
+            <li>Also access Glo inside VS Code, Atom, a browser or from our iPhone or Android apps.</li>
+            <li>Create cards to track tasks, issues, items, features, etc.</li>
+            <li>Sync GitHub Issues, assignees, descriptions, comments and labels in real-time across systems.</li>
+            <li>Visualize the progress of GitHub issues with workflows.</li>
+            <li>Create different workflows and labels for each board.</li>
+            <li>Add different users and security permissions for each board.</li>
+            <li>Track board activity.</li>
+            <li>See only what you’re looking for with powerful search &amp; filters.</li>
+            <li>Use card labels to quickly see priority, item type, etc.</li>
+            <li>Use card task lists to create additional checklists for each card.</li>
+            <li>Easily add images and files by dragging and dropping.</li>
+            <li>Use markdown in card descriptions and comments.</li>
+            <li>Get notifications in-app and via email.</li>
+            <li>Tag people in comments using @mentions.</li>
+            <li>Choose the light or dark theme.</li>
+        </ul>
     </description>
+
     <launchable type="desktop-id">com.axosoft.GitKraken.desktop</launchable>
 
     <screenshots>
@@ -36,6 +76,7 @@
         <category>Development</category>
         <category>RevisionControl</category>
     </categories>
+
     <releases>
         <release date="2018-11-14" version="4.1.1"/>
         <release date="2018-11-13" version="4.1.0"/>
