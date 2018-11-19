@@ -7,6 +7,8 @@
     <summary>Unleash your repo.</summary>
     <metadata_license>CC0-1.0</metadata_license>
     <url type="homepage">https://www.gitkraken.com/</url>
+    <url type="help">https://www.gitkraken.com/contact</url>
+
     <description>
         <p>The best Git client should integrate with your Git hosting service.
             That’s why GitKraken connects to popular services like GitHub, Bitbucket and GitLab to make working
