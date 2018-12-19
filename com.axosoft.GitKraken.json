@@ -75,8 +75,8 @@
       "sources": [
         {
           "type": "archive",
-          "url": "https://www.kernel.org/pub/software/scm/git/git-2.19.1.tar.xz",
-          "sha256": "345056aa9b8084280b1b9fe1374d232dec05a34e8849028a20bfdb56e920dbb5"
+          "url": "https://www.kernel.org/pub/software/scm/git/git-2.20.1.tar.xz",
+          "sha256": "9d2e91e2faa2ea61ba0a70201d023b36f54d846314591a002c610ea2ab81c3e9"
         }
       ]
     },
