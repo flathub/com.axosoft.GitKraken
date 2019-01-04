@@ -60,8 +60,8 @@
       "sources": [
         {
           "type": "archive",
-          "url": "https://curl.haxx.se/download/curl-7.62.0.tar.xz",
-          "sha256": "dab5643a5fe775ae92570b9f3df6b0ef4bc2a827a959361fb130c73b721275c1"
+          "url": "https://curl.haxx.se/download/curl-7.63.0.tar.xz",
+          "sha256": "9600234c794bfb8a0d3f138e9294d60a20e7a5f10e35ece8cf518e2112d968c4"
         }
       ]
     },
@@ -75,8 +75,8 @@
       "sources": [
         {
           "type": "archive",
-          "url": "https://www.kernel.org/pub/software/scm/git/git-2.19.1.tar.xz",
-          "sha256": "345056aa9b8084280b1b9fe1374d232dec05a34e8849028a20bfdb56e920dbb5"
+          "url": "https://www.kernel.org/pub/software/scm/git/git-2.20.1.tar.xz",
+          "sha256": "9d2e91e2faa2ea61ba0a70201d023b36f54d846314591a002c610ea2ab81c3e9"
         }
       ]
     },
@@ -91,8 +91,8 @@
         {
           "type": "archive",
           "strip-components": 0,
-          "url": "https://github.com/git-lfs/git-lfs/releases/download/v2.6.0/git-lfs-linux-amd64-v2.6.0.tar.gz",
-          "sha256": "43e9311bdded82d43c574b075aafaf56681a3450c1ccf59cce9d362acabf1362"
+          "url": "https://github.com/git-lfs/git-lfs/releases/download/v2.6.1/git-lfs-linux-amd64-v2.6.1.tar.gz",
+          "sha256": "c098092be413915793214a570cd51ef46089b6f6616b2f78e35ba374de613b5b"
         }
       ]
     },
@@ -140,9 +140,9 @@
           "only-arches": [
             "x86_64"
           ],
-          "url": "https://release.axocdn.com/linux/GitKraken-v4.1.1.tar.gz",
-          "sha256": "162befa3206adfebb3f8d64060a516eea8ef6f84e19c96bed14b9330d0ef7660",
-          "size": 99537648
+          "url": "https://release.axocdn.com/linux/GitKraken-v4.2.0.tar.gz",
+          "sha256": "dd7598f41a5e2ffb5732c7c230bac2fc428275d9cf22563b1cb67724e7ce240a",
+          "size": 97090034
         }
       ]
     }
