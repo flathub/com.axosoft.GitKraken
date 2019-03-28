@@ -19,52 +19,9 @@
     "--share=network",
     "--device=dri",
     "--filesystem=host",
-    "--talk-name=org.freedesktop.secrets",
-    "--env=LD_LIBRARY_PATH=/app/lib"
-  ],
-  "cleanup": [
-    "/include",
-    "/lib/pkgconfig",
-    "/share/pkgconfig",
-    "/share/aclocal",
-    "/man",
-    "/share/man",
-    "/share/gtk-doc",
-    "/share/doc",
-    "*.la",
-    "*.a"
+    "--talk-name=org.freedesktop.secrets"
   ],
   "modules": [
-    {
-      "name": "libcurl-gnutls",
-      "config-opts": [
-        "--disable-ldap",
-        "--disable-ldaps",
-        "--disable-manual",
-        "--enable-ipv6",
-        "--enable-threaded-resolver",
-        "--without-gssapi",
-        "--without-libidn",
-        "--without-ssl",
-        "--with-gnutls=/usr",
-        "--with-ca-bundle='/etc/ssl/certs/ca-certificates.crt'"
-      ],
-      "cleanup": [
-        "/bin"
-      ],
-      "post-install": [
-        "mv /app/lib/libcurl{,-gnutls}.so.4.5.0",
-        "rm /app/lib/libcurl.so*",
-        "ln -s /app/lib/libcurl-gnutls.so.4.5.0 /app/lib/libcurl-gnutls.so.4"
-      ],
-      "sources": [
-        {
-          "type": "archive",
-          "url": "https://curl.haxx.se/download/curl-7.64.1.tar.xz",
-          "sha256": "9252332a7f871ce37bfa7f78bdd0a0e3924d8187cc27cb57c76c9474a7168fb3"
-        }
-      ]
-    },
     {
       "name": "git",
       "make-args": ["NO_TCLTK=YesPlease"],
