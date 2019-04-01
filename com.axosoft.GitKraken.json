@@ -75,6 +75,7 @@
         {
           "type": "script",
           "commands": [
+            "export PATH=\"${PATH}:/app/libexec/git-core\"",
             "exec env /app/extra/gitkraken/gitkraken"
           ],
           "dest-filename": "gitkraken.sh"
