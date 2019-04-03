@@ -98,9 +98,9 @@
           "only-arches": [
             "x86_64"
           ],
-          "url": "https://release.axocdn.com/linux/GitKraken-v5.0.3.tar.gz",
-          "sha256": "9b79ce7439a31db8cf611e16a1d2b1c4aa47e41c2932fcceb7a2f3cab764e44b",
-          "size": 98536257
+          "url": "https://release.axocdn.com/linux/GitKraken-v5.0.4.tar.gz",
+          "sha256": "982a66bd2c0deb214b54ce9808b1b89cdc4ecfc6b731614d337e4a292a208cc7",
+          "size": 98505823
         }
       ]
     }
