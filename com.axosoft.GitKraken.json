@@ -3,7 +3,7 @@
   "runtime": "org.freedesktop.Platform",
   "runtime-version": "18.08",
   "sdk": "org.freedesktop.Sdk",
-  "base": "io.atom.electron.BaseApp",
+  "base": "org.electronjs.Electron2.BaseApp",
   "base-version": "18.08",
   "command": "gitkraken",
   "tags": [
@@ -14,11 +14,16 @@
     "--require-version=0.11.1",
     "--share=ipc",
     "--socket=x11",
-    "--socket=wayland",
+    "--socket=pulseaudio",
     "--socket=ssh-auth",
     "--share=network",
     "--device=dri",
     "--filesystem=host",
+    "--filesystem=xdg-run/dconf",
+    "--filesystem=~/.config/dconf:ro",
+    "--talk-name=ca.desrt.dconf",
+    "--env=DCONF_USER_CONFIG_DIR=.config/dconf",
+    "--talk-name=org.freedesktop.Notifications",
     "--talk-name=org.freedesktop.secrets"
   ],
   "modules": [
