@@ -29,8 +29,14 @@
   "modules": [
     {
       "name": "git",
-      "make-args": ["NO_TCLTK=YesPlease"],
-      "make-install-args": ["NO_TCLTK=YesPlease"],
+      "make-args": [
+        "NO_TCLTK=YesPlease",
+        "INSTALL_SYMLINKS=1"
+      ],
+      "make-install-args": [
+        "NO_TCLTK=YesPlease",
+        "INSTALL_SYMLINKS=1"
+      ],
       "post-install": [
         "find . -type f -name perllocal.pod -delete"
       ],
@@ -53,8 +59,8 @@
         {
           "type": "archive",
           "strip-components": 0,
-          "url": "https://github.com/git-lfs/git-lfs/releases/download/v2.7.1/git-lfs-linux-amd64-v2.7.1.tar.gz",
-          "sha256": "7be85238cbbb957ab25de52b60279d40ba40d3faa72eeb2cb9fa77d6d92381e5"
+          "url": "https://github.com/git-lfs/git-lfs/releases/download/v2.7.2/git-lfs-linux-amd64-v2.7.2.tar.gz",
+          "sha256": "89f5aa2c29800bbb71f5d4550edd69c5f83e3ee9e30f770446436dd7f4ef1d4c"
         }
       ]
     },
