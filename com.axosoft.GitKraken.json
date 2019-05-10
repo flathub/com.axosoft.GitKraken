@@ -29,8 +29,14 @@
   "modules": [
     {
       "name": "git",
-      "make-args": ["NO_TCLTK=YesPlease"],
-      "make-install-args": ["NO_TCLTK=YesPlease"],
+      "make-args": [
+        "NO_TCLTK=YesPlease",
+        "INSTALL_SYMLINKS=1"
+      ],
+      "make-install-args": [
+        "NO_TCLTK=YesPlease",
+        "INSTALL_SYMLINKS=1"
+      ],
       "post-install": [
         "find . -type f -name perllocal.pod -delete"
       ],
