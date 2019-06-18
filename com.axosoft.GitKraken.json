@@ -43,8 +43,8 @@
       "sources": [
         {
           "type": "archive",
-          "url": "https://www.kernel.org/pub/software/scm/git/git-2.21.0.tar.xz",
-          "sha256": "8ccb1ce743ee991d91697e163c47c11be4bf81efbdd9fb0b4a7ad77cc0020d28"
+          "url": "https://www.kernel.org/pub/software/scm/git/git-2.22.0.tar.xz",
+          "sha256": "159e4b599f8af4612e70b666600a3139541f8bacc18124daf2cbe8d1b934f29f"
         }
       ]
     },
@@ -109,9 +109,9 @@
           "only-arches": [
             "x86_64"
           ],
-          "url": "https://release.axocdn.com/linux/GitKraken-v5.0.4.tar.gz",
-          "sha256": "982a66bd2c0deb214b54ce9808b1b89cdc4ecfc6b731614d337e4a292a208cc7",
-          "size": 98505823
+          "url": "https://release.axocdn.com/linux/GitKraken-v6.0.0.tar.gz",
+          "sha256": "5b1c2278404d7c2864a75274c5c59fe03392b07f48edd7d21c0549fdd2205df3",
+          "size": 149278299
         }
       ]
     }
