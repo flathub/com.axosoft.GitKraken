@@ -59,8 +59,8 @@
         {
           "type": "archive",
           "strip-components": 0,
-          "url": "https://github.com/git-lfs/git-lfs/releases/download/v2.7.2/git-lfs-linux-amd64-v2.7.2.tar.gz",
-          "sha256": "89f5aa2c29800bbb71f5d4550edd69c5f83e3ee9e30f770446436dd7f4ef1d4c"
+          "url": "https://github.com/git-lfs/git-lfs/releases/download/v2.8.0/git-lfs-linux-amd64-v2.8.0.tar.gz",
+          "sha256": "54054178deea7c97ce58edf9c0a2f79eb30c1e836fbc7e6dece9b2c9ff516863"
         }
       ]
     },
@@ -109,9 +109,9 @@
           "only-arches": [
             "x86_64"
           ],
-          "url": "https://release.axocdn.com/linux/GitKraken-v6.0.1.tar.gz",
-          "sha256": "ac262d621be383edc695c4d50ce3cb08edb9737fc30798eaa6ee9d643a4cf00c",
-          "size": 133077393
+          "url": "https://release.axocdn.com/linux/GitKraken-v6.1.0.tar.gz",
+          "sha256": "62587dab7b49e4137812e3f93e9a70eb83cbc6eca877c4518466a297ea85af92",
+          "size": 119004409
         }
       ]
     }
