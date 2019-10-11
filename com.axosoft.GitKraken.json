@@ -104,9 +104,6 @@
         {
           "type": "extra-data",
           "filename": "gitkraken.tar.gz",
-          "only-arches": [
-            "x86_64"
-          ],
           "url": "https://release.axocdn.com/linux/GitKraken-v6.2.1.tar.gz",
           "sha256": "bc030dd78ba53845c03201697f57a5de45a0aa019760d6f31372f66ab311dde1",
           "size": 116363383
