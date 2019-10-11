@@ -67,11 +67,12 @@
       "name": "gitkraken",
       "buildsystem": "simple",
       "build-commands": [
+        "install -Dm0755 $(which ar) ${FLATPAK_DEST}/bin/",
+        "install -Dm0755 /usr/lib/$(gcc -print-multiarch)/libbfd-*.so -t /app/lib/",
+        "install -Dm0755 $(which desktop-file-edit) ${FLATPAK_DEST}/bin/",
         "install -Dm0755 apply_extra.sh ${FLATPAK_DEST}/bin/apply_extra",
         "install -Dm0755 gitkraken.sh ${FLATPAK_DEST}/bin/gitkraken",
-        "install -Dm0644 com.axosoft.GitKraken.png ${FLATPAK_DEST}/share/icons/hicolor/512x512/apps/com.axosoft.GitKraken.png",
-        "install -Dm0644 com.axosoft.GitKraken.appdata.xml ${FLATPAK_DEST}/share/appdata/com.axosoft.GitKraken.appdata.xml",
-        "install -Dm0644 gitkraken.desktop ${FLATPAK_DEST}/share/applications/com.axosoft.GitKraken.desktop"
+        "install -Dm0644 com.axosoft.GitKraken.appdata.xml ${FLATPAK_DEST}/share/appdata/com.axosoft.GitKraken.appdata.xml"
       ],
       "sources": [
         {
@@ -87,19 +88,11 @@
           "path": "com.axosoft.GitKraken.appdata.xml"
         },
         {
-          "type": "file",
-          "path": "gitkraken.desktop"
-        },
-        {
-          "type": "file",
-          "path": "com.axosoft.GitKraken.png"
-        },
-        {
           "type": "extra-data",
-          "filename": "gitkraken.tar.gz",
-          "url": "https://release.axocdn.com/linux/GitKraken-v6.2.1.tar.gz",
-          "sha256": "bc030dd78ba53845c03201697f57a5de45a0aa019760d6f31372f66ab311dde1",
-          "size": 116363383
+          "filename": "gitkraken.deb",
+          "url": "https://release.axocdn.com/linux/GitKraken-v6.2.1.deb",
+          "sha256": "afef5173b39a9fd473454c4a99ca564153e2da61966ab7ce140f684df2433cd0",
+          "size": 76954988
         }
       ]
     }

@@ -7,6 +7,8 @@
     <summary>For repo management, in-app code editing &amp; issue tracking.</summary>
     <metadata_license>CC0-1.0</metadata_license>
 
+    <icon type="remote" height="256" width="256">https://dashboard.snapcraft.io/site_media/appmedia/2018/01/1.png</icon>
+
     <url type="homepage">https://www.gitkraken.com/</url>
     <url type="help">https://www.gitkraken.com/contact</url>
 
