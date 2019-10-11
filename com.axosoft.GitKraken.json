@@ -52,8 +52,8 @@
       "name": "git-lfs",
       "buildsystem": "simple",
       "build-commands": [
-        "mkdir --parents /app/libexec/git-core/",
-        "install -Dm0755 git-lfs /app/libexec/git-core/"
+        "mkdir --parents ${FLATPAK_DEST}/libexec/git-core/",
+        "install -Dm0755 git-lfs ${FLATPAK_DEST}/libexec/git-core/"
       ],
       "sources": [
         {
@@ -68,11 +68,11 @@
       "name": "gitkraken",
       "buildsystem": "simple",
       "build-commands": [
-        "install -Dm0755 apply_extra /app/bin/apply_extra",
-        "install -Dm0755 gitkraken.sh /app/bin/gitkraken",
-        "install -Dm0644 com.axosoft.GitKraken.png /app/share/icons/hicolor/512x512/apps/com.axosoft.GitKraken.png",
-        "install -Dm0644 com.axosoft.GitKraken.appdata.xml /app/share/appdata/com.axosoft.GitKraken.appdata.xml",
-        "install -Dm0644 gitkraken.desktop /app/share/applications/com.axosoft.GitKraken.desktop"
+        "install -Dm0755 apply_extra ${FLATPAK_DEST}/bin/apply_extra",
+        "install -Dm0755 gitkraken.sh ${FLATPAK_DEST}/bin/gitkraken",
+        "install -Dm0644 com.axosoft.GitKraken.png ${FLATPAK_DEST}/share/icons/hicolor/512x512/apps/com.axosoft.GitKraken.png",
+        "install -Dm0644 com.axosoft.GitKraken.appdata.xml ${FLATPAK_DEST}/share/appdata/com.axosoft.GitKraken.appdata.xml",
+        "install -Dm0644 gitkraken.desktop ${FLATPAK_DEST}/share/applications/com.axosoft.GitKraken.desktop"
       ],
       "sources": [
         {
