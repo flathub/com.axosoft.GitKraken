@@ -67,7 +67,7 @@
       "name": "gitkraken",
       "buildsystem": "simple",
       "build-commands": [
-        "install -Dm0755 apply_extra ${FLATPAK_DEST}/bin/apply_extra",
+        "install -Dm0755 apply_extra.sh ${FLATPAK_DEST}/bin/apply_extra",
         "install -Dm0755 gitkraken.sh ${FLATPAK_DEST}/bin/gitkraken",
         "install -Dm0644 com.axosoft.GitKraken.png ${FLATPAK_DEST}/share/icons/hicolor/512x512/apps/com.axosoft.GitKraken.png",
         "install -Dm0644 com.axosoft.GitKraken.appdata.xml ${FLATPAK_DEST}/share/appdata/com.axosoft.GitKraken.appdata.xml",
@@ -75,12 +75,8 @@
       ],
       "sources": [
         {
-          "type": "script",
-          "dest-filename": "apply_extra",
-          "commands": [
-            "tar -xf gitkraken.tar.gz",
-            "rm -f gitkraken.tar.gz"
-          ]
+          "type": "file",
+          "path": "apply_extra.sh"
         },
         {
           "type": "file",
