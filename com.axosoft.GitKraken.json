@@ -83,11 +83,8 @@
           ]
         },
         {
-          "type": "script",
-          "commands": [
-            "exec env /app/extra/gitkraken/gitkraken"
-          ],
-          "dest-filename": "gitkraken.sh"
+          "type": "file",
+          "path": "gitkraken.sh"
         },
         {
           "type": "file",
