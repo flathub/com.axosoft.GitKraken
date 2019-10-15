@@ -24,6 +24,7 @@
     "--talk-name=org.freedesktop.Flatpak"
   ],
   "modules": [
+    "shared-modules/python2.7/python-2.7.json",
     {
       "name": "git",
       "make-args": [
