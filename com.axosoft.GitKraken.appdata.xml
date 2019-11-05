@@ -80,6 +80,7 @@
     </categories>
 
     <releases>
+        <release date="2019-11-05" version="6.3.1"/>
         <release date="2019-10-14" version="6.3.0"/>
         <release date="2019-09-25" version="6.2.1"/>
         <release date="2019-09-11" version="6.2.0"/>

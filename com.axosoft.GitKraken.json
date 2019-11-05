@@ -44,8 +44,8 @@
       "sources": [
         {
           "type": "archive",
-          "url": "https://www.kernel.org/pub/software/scm/git/git-2.23.0.tar.xz",
-          "sha256": "234fa05b6839e92dc300b2dd78c92ec9c0c8d439f65e1d430a7034f60af16067"
+          "url": "https://www.kernel.org/pub/software/scm/git/git-2.24.0.tar.xz",
+          "sha256": "9f71d61973626d8b28c4cdf8e2484b4bf13870ed643fed982d68b2cfd754371b"
         }
       ]
     },
@@ -59,8 +59,8 @@
         {
           "type": "archive",
           "strip-components": 0,
-          "url": "https://github.com/git-lfs/git-lfs/releases/download/v2.8.0/git-lfs-linux-amd64-v2.8.0.tar.gz",
-          "sha256": "54054178deea7c97ce58edf9c0a2f79eb30c1e836fbc7e6dece9b2c9ff516863"
+          "url": "https://github.com/git-lfs/git-lfs/releases/download/v2.9.0/git-lfs-linux-amd64-v2.9.0.tar.gz",
+          "sha256": "afe269af8c60f2f36f9c9203dd0af279f0b8f74e1a36493330b82d99adc05ddc"
         }
       ]
     },
@@ -91,9 +91,9 @@
         {
           "type": "extra-data",
           "filename": "gitkraken.deb",
-          "url": "https://release.axocdn.com/linux/GitKraken-v6.3.0.deb",
-          "sha256": "d7cb693b376b3deff26feeeb74ccd69d8d80f6fb26cc28cea2c98997e7fc121a",
-          "size": 77678970
+          "url": "https://release.axocdn.com/linux/GitKraken-v6.3.1.deb",
+          "sha256": "09c9ad665beaa654acc8ffeec04799977b5948350357e19d2dce542fcd1f311c",
+          "size": 77699698
         }
       ]
     }
