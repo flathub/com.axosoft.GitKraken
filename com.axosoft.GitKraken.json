@@ -37,6 +37,13 @@
       ]
     },
     {
+      "name": "desktop-file-edit",
+      "buildsystem": "simple",
+      "build-commands": [
+        "install -Dm0755 $(which desktop-file-edit) ${FLATPAK_DEST}/bin/"
+      ]
+    },
+    {
       "name": "git",
       "make-args": [
         "NO_TCLTK=YesPlease",
@@ -76,7 +83,6 @@
       "name": "gitkraken",
       "buildsystem": "simple",
       "build-commands": [
-        "install -Dm0755 $(which desktop-file-edit) ${FLATPAK_DEST}/bin/",
         "install -Dm0755 apply_extra.sh ${FLATPAK_DEST}/bin/apply_extra",
         "install -Dm0755 gitkraken.sh ${FLATPAK_DEST}/bin/gitkraken",
         "install -Dm0644 com.axosoft.GitKraken.appdata.xml ${FLATPAK_DEST}/share/appdata/com.axosoft.GitKraken.appdata.xml"
