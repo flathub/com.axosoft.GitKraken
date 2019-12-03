@@ -66,8 +66,8 @@
         {
           "type": "archive",
           "strip-components": 0,
-          "url": "https://github.com/git-lfs/git-lfs/releases/download/v2.9.0/git-lfs-linux-amd64-v2.9.0.tar.gz",
-          "sha256": "afe269af8c60f2f36f9c9203dd0af279f0b8f74e1a36493330b82d99adc05ddc"
+          "url": "https://github.com/git-lfs/git-lfs/releases/download/v2.9.1/git-lfs-linux-amd64-v2.9.1.tar.gz",
+          "sha256": "2a8e60cf51ec45aa0f4332aa0521d60ec75c76e485d13ebaeea915b9d70ea466"
         }
       ]
     },
