@@ -77,7 +77,7 @@
       "build-commands": [
         "install -Dm0755 apply_extra.sh ${FLATPAK_DEST}/bin/apply_extra",
         "install -Dm0755 gitkraken.sh ${FLATPAK_DEST}/bin/gitkraken",
-        "install -Dm0644 com.axosoft.GitKraken.appdata.xml ${FLATPAK_DEST}/share/appdata/com.axosoft.GitKraken.appdata.xml"
+        "install -Dm0644 ${FLATPAK_ID}.appdata.xml ${FLATPAK_DEST}/share/appdata/${FLATPAK_ID}.appdata.xml"
       ],
       "sources": [
         {
