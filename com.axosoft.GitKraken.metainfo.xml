@@ -1,16 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <component type="desktop-application">
     <id>com.axosoft.GitKraken</id>
-    <name>GitKraken</name>
-    <project_license>LicenseRef-proprietary</project_license>
-    <developer_name>Axosoft</developer_name>
-    <summary>For repo management, in-app code editing &amp; issue tracking.</summary>
     <metadata_license>CC0-1.0</metadata_license>
+    <project_license>LicenseRef-proprietary</project_license>
+    <name>GitKraken</name>
+    <summary>For repo management, in-app code editing &amp; issue tracking.</summary>
 
     <icon type="remote" height="256" width="256">https://dashboard.snapcraft.io/site_media/appmedia/2018/01/1.png</icon>
-
-    <url type="homepage">https://www.gitkraken.com/</url>
-    <url type="help">https://www.gitkraken.com/contact</url>
 
     <description>
         <p>NOTE: This wrapper is not verified by, affiliated with, or
@@ -72,14 +68,12 @@
         </screenshot>
     </screenshots>
 
-    <categories>
-        <category>GNOME</category>
-        <category>GTK</category>
-        <category>Development</category>
-        <category>RevisionControl</category>
-    </categories>
+    <developer_name>Axosoft</developer_name>
+    <url type="homepage">https://www.gitkraken.com/</url>
+    <url type="help">https://www.gitkraken.com/contact</url>
 
     <releases>
+        <release date="2019-12-12" version="6.4.0"/>
         <release date="2019-11-05" version="6.3.1"/>
         <release date="2019-10-14" version="6.3.0"/>
         <release date="2019-09-25" version="6.2.1"/>

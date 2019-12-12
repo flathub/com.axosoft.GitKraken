@@ -1,10 +1,10 @@
 {
   "id": "com.axosoft.GitKraken",
-  "runtime": "org.freedesktop.Platform",
-  "runtime-version": "18.08",
-  "sdk": "org.freedesktop.Sdk",
+  "runtime": "org.gnome.Platform",
+  "runtime-version": "3.34",
+  "sdk": "org.gnome.Sdk",
   "base": "org.electronjs.Electron2.BaseApp",
-  "base-version": "18.08",
+  "base-version": "19.08",
   "command": "gitkraken",
   "tags": [
     "proprietary"
@@ -19,34 +19,37 @@
     "--share=network",
     "--device=dri",
     "--filesystem=host",
-    "--filesystem=xdg-run/dconf",
-    "--filesystem=~/.config/dconf:ro",
-    "--talk-name=ca.desrt.dconf",
-    "--env=DCONF_USER_CONFIG_DIR=.config/dconf",
     "--talk-name=org.freedesktop.Notifications",
     "--talk-name=org.freedesktop.secrets",
     "--talk-name=org.freedesktop.Flatpak"
   ],
   "modules": [
     {
+      "name": "ar",
+      "buildsystem": "simple",
+      "build-commands": [
+        "install -Dm0755 /usr/lib/$(gcc -print-multiarch)/libbfd-*.so -t ${FLATPAK_DEST}/lib/",
+        "install -Dm0755 $(which ar) ${FLATPAK_DEST}/bin/"
+      ]
+    },
+    {
+      "name": "desktop-file-edit",
+      "buildsystem": "simple",
+      "build-commands": [
+        "install -Dm0755 $(which desktop-file-edit) ${FLATPAK_DEST}/bin/"
+      ]
+    },
+    {
       "name": "git",
-      "make-args": [
-        "NO_TCLTK=YesPlease",
-        "INSTALL_SYMLINKS=1"
-      ],
-      "make-install-args": [
-        "NO_TCLTK=YesPlease",
-        "INSTALL_SYMLINKS=1"
-      ],
-      "post-install": [
-        "find . -type f -name perllocal.pod -delete"
-      ],
-      "sources": [
-        {
-          "type": "archive",
-          "url": "https://www.kernel.org/pub/software/scm/git/git-2.24.0.tar.xz",
-          "sha256": "9f71d61973626d8b28c4cdf8e2484b4bf13870ed643fed982d68b2cfd754371b"
-        }
+      "buildsystem": "simple",
+      "build-commands": [
+        "install -Dm0755 $(which git) ${FLATPAK_DEST}/bin/",
+        "install -Dm0755 $(which git-clang-format) ${FLATPAK_DEST}/bin/",
+        "install -Dm0755 $(which git-cvsserver) ${FLATPAK_DEST}/bin/",
+        "install -Dm0755 $(which git-receive-pack) ${FLATPAK_DEST}/bin/",
+        "install -Dm0755 $(which git-shell) ${FLATPAK_DEST}/bin/",
+        "install -Dm0755 $(which git-upload-archive) ${FLATPAK_DEST}/bin/",
+        "install -Dm0755 $(which git-upload-pack) ${FLATPAK_DEST}/bin/"
       ]
     },
     {
@@ -59,8 +62,8 @@
         {
           "type": "archive",
           "strip-components": 0,
-          "url": "https://github.com/git-lfs/git-lfs/releases/download/v2.9.0/git-lfs-linux-amd64-v2.9.0.tar.gz",
-          "sha256": "afe269af8c60f2f36f9c9203dd0af279f0b8f74e1a36493330b82d99adc05ddc"
+          "url": "https://github.com/git-lfs/git-lfs/releases/download/v2.9.1/git-lfs-linux-amd64-v2.9.1.tar.gz",
+          "sha256": "2a8e60cf51ec45aa0f4332aa0521d60ec75c76e485d13ebaeea915b9d70ea466"
         }
       ]
     },
@@ -68,12 +71,9 @@
       "name": "gitkraken",
       "buildsystem": "simple",
       "build-commands": [
-        "install -Dm0755 $(which ar) ${FLATPAK_DEST}/bin/",
-        "install -Dm0755 /usr/lib/$(gcc -print-multiarch)/libbfd-*.so -t /app/lib/",
-        "install -Dm0755 $(which desktop-file-edit) ${FLATPAK_DEST}/bin/",
         "install -Dm0755 apply_extra.sh ${FLATPAK_DEST}/bin/apply_extra",
         "install -Dm0755 gitkraken.sh ${FLATPAK_DEST}/bin/gitkraken",
-        "install -Dm0644 com.axosoft.GitKraken.appdata.xml ${FLATPAK_DEST}/share/appdata/com.axosoft.GitKraken.appdata.xml"
+        "install -Dm0644 ${FLATPAK_ID}.metainfo.xml ${FLATPAK_DEST}/share/appdata/${FLATPAK_ID}.metainfo.xml"
       ],
       "sources": [
         {
@@ -86,14 +86,14 @@
         },
         {
           "type": "file",
-          "path": "com.axosoft.GitKraken.appdata.xml"
+          "path": "com.axosoft.GitKraken.metainfo.xml"
         },
         {
           "type": "extra-data",
           "filename": "gitkraken.deb",
-          "url": "https://release.axocdn.com/linux/GitKraken-v6.3.1.deb",
-          "sha256": "09c9ad665beaa654acc8ffeec04799977b5948350357e19d2dce542fcd1f311c",
-          "size": 77699698
+          "url": "https://release.axocdn.com/linux/GitKraken-v6.4.0.deb",
+          "sha256": "c2632208a3d434ba84b6c3273a427eef8c308645a1ad0b7027e1e6418acab0e7",
+          "size": 78070026
         }
       ]
     }

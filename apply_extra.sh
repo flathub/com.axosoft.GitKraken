@@ -1,9 +1,8 @@
-#!/usr/bin/env bash
+#!/usr/bin/env sh
 
 set -e
 
-ar x gitkraken.deb
-tar xf data.tar.xz
+ar p gitkraken.deb data.tar.xz | tar -xJf -
 
 install -Dm0644 usr/share/gitkraken/gitkraken.png export/share/icons/hicolor/512x512/apps/com.axosoft.GitKraken.png
 
@@ -15,4 +14,4 @@ desktop-file-edit --set-key="StartupWMClass" --set-value="gitkraken" "$desktop_f
 
 mv usr/share/gitkraken gitkraken
 
-rm -rf gitkraken.deb control.tar.gz data.tar.xz debian-binary usr
+rm -rf gitkraken.deb usr
