@@ -19,6 +19,9 @@
     "--share=network",
     "--device=dri",
     "--filesystem=host",
+    "--filesystem=xdg-run/gvfs",
+    "--talk-name=org.gtk.vfs",
+    "--talk-name=org.gtk.vfs.*",
     "--talk-name=org.freedesktop.Notifications",
     "--talk-name=org.freedesktop.secrets",
     "--talk-name=org.freedesktop.Flatpak"
@@ -93,7 +96,13 @@
           "filename": "gitkraken.deb",
           "url": "https://release.axocdn.com/linux/GitKraken-v6.4.0.deb",
           "sha256": "c2632208a3d434ba84b6c3273a427eef8c308645a1ad0b7027e1e6418acab0e7",
-          "size": 78070026
+          "size": 78070026,
+          "x-checker-data": {
+            "type": "html",
+            "url": "https://www.gitkraken.com/download.html",
+            "version-pattern": "Latest release: ((?:\\d+\\.)?(?:\\d+\\.)?\\d+)",
+            "url-template": "https://release.axocdn.com/linux/GitKraken-v$version.deb"
+          }
         }
       ]
     }
