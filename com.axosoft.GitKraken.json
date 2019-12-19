@@ -1,110 +1,110 @@
 {
-  "id": "com.axosoft.GitKraken",
-  "runtime": "org.gnome.Platform",
-  "runtime-version": "3.34",
-  "sdk": "org.gnome.Sdk",
-  "base": "org.electronjs.Electron2.BaseApp",
-  "base-version": "19.08",
-  "command": "gitkraken",
-  "tags": [
-    "proprietary"
-  ],
-  "separate-locales": false,
-  "finish-args": [
-    "--require-version=0.11.1",
-    "--share=ipc",
-    "--socket=x11",
-    "--socket=pulseaudio",
-    "--socket=ssh-auth",
-    "--share=network",
-    "--device=dri",
-    "--filesystem=host",
-    "--filesystem=xdg-run/gvfs",
-    "--talk-name=org.gtk.vfs",
-    "--talk-name=org.gtk.vfs.*",
-    "--talk-name=org.freedesktop.Notifications",
-    "--talk-name=org.freedesktop.secrets",
-    "--talk-name=org.freedesktop.Flatpak"
-  ],
-  "modules": [
-    {
-      "name": "ar",
-      "buildsystem": "simple",
-      "build-commands": [
-        "install -Dm0755 /usr/lib/$(gcc -print-multiarch)/libbfd-*.so -t ${FLATPAK_DEST}/lib/",
-        "install -Dm0755 $(which ar) ${FLATPAK_DEST}/bin/"
-      ]
-    },
-    {
-      "name": "desktop-file-edit",
-      "buildsystem": "simple",
-      "build-commands": [
-        "install -Dm0755 $(which desktop-file-edit) ${FLATPAK_DEST}/bin/"
-      ]
-    },
-    {
-      "name": "git",
-      "buildsystem": "simple",
-      "build-commands": [
-        "install -Dm0755 $(which git) ${FLATPAK_DEST}/bin/",
-        "install -Dm0755 $(which git-clang-format) ${FLATPAK_DEST}/bin/",
-        "install -Dm0755 $(which git-cvsserver) ${FLATPAK_DEST}/bin/",
-        "install -Dm0755 $(which git-receive-pack) ${FLATPAK_DEST}/bin/",
-        "install -Dm0755 $(which git-shell) ${FLATPAK_DEST}/bin/",
-        "install -Dm0755 $(which git-upload-archive) ${FLATPAK_DEST}/bin/",
-        "install -Dm0755 $(which git-upload-pack) ${FLATPAK_DEST}/bin/"
-      ]
-    },
-    {
-      "name": "git-lfs",
-      "buildsystem": "simple",
-      "build-commands": [
-        "install -Dm0755 git-lfs ${FLATPAK_DEST}/bin/"
-      ],
-      "sources": [
+    "id": "com.axosoft.GitKraken",
+    "runtime": "org.gnome.Platform",
+    "runtime-version": "3.34",
+    "sdk": "org.gnome.Sdk",
+    "base": "org.electronjs.Electron2.BaseApp",
+    "base-version": "19.08",
+    "command": "gitkraken",
+    "tags": [
+        "proprietary"
+    ],
+    "separate-locales": false,
+    "finish-args": [
+        "--require-version=0.11.1",
+        "--share=ipc",
+        "--socket=x11",
+        "--socket=pulseaudio",
+        "--socket=ssh-auth",
+        "--share=network",
+        "--device=dri",
+        "--filesystem=host",
+        "--filesystem=xdg-run/gvfs",
+        "--talk-name=org.gtk.vfs",
+        "--talk-name=org.gtk.vfs.*",
+        "--talk-name=org.freedesktop.Notifications",
+        "--talk-name=org.freedesktop.secrets",
+        "--talk-name=org.freedesktop.Flatpak"
+    ],
+    "modules": [
         {
-          "type": "archive",
-          "strip-components": 0,
-          "url": "https://github.com/git-lfs/git-lfs/releases/download/v2.9.1/git-lfs-linux-amd64-v2.9.1.tar.gz",
-          "sha256": "2a8e60cf51ec45aa0f4332aa0521d60ec75c76e485d13ebaeea915b9d70ea466"
+            "name": "ar",
+            "buildsystem": "simple",
+            "build-commands": [
+                "install -Dm0755 /usr/lib/$(gcc -print-multiarch)/libbfd-*.so -t ${FLATPAK_DEST}/lib/",
+                "install -Dm0755 $(which ar) ${FLATPAK_DEST}/bin/"
+            ]
+        },
+        {
+            "name": "desktop-file-edit",
+            "buildsystem": "simple",
+            "build-commands": [
+                "install -Dm0755 $(which desktop-file-edit) ${FLATPAK_DEST}/bin/"
+            ]
+        },
+        {
+            "name": "git",
+            "buildsystem": "simple",
+            "build-commands": [
+                "install -Dm0755 $(which git) ${FLATPAK_DEST}/bin/",
+                "install -Dm0755 $(which git-clang-format) ${FLATPAK_DEST}/bin/",
+                "install -Dm0755 $(which git-cvsserver) ${FLATPAK_DEST}/bin/",
+                "install -Dm0755 $(which git-receive-pack) ${FLATPAK_DEST}/bin/",
+                "install -Dm0755 $(which git-shell) ${FLATPAK_DEST}/bin/",
+                "install -Dm0755 $(which git-upload-archive) ${FLATPAK_DEST}/bin/",
+                "install -Dm0755 $(which git-upload-pack) ${FLATPAK_DEST}/bin/"
+            ]
+        },
+        {
+            "name": "git-lfs",
+            "buildsystem": "simple",
+            "build-commands": [
+                "install -Dm0755 git-lfs ${FLATPAK_DEST}/bin/"
+            ],
+            "sources": [
+                {
+                    "type": "archive",
+                    "strip-components": 0,
+                    "url": "https://github.com/git-lfs/git-lfs/releases/download/v2.9.1/git-lfs-linux-amd64-v2.9.1.tar.gz",
+                    "sha256": "2a8e60cf51ec45aa0f4332aa0521d60ec75c76e485d13ebaeea915b9d70ea466"
+                }
+            ]
+        },
+        {
+            "name": "gitkraken",
+            "buildsystem": "simple",
+            "build-commands": [
+                "install -Dm0755 apply_extra.sh ${FLATPAK_DEST}/bin/apply_extra",
+                "install -Dm0755 gitkraken.sh ${FLATPAK_DEST}/bin/gitkraken",
+                "install -Dm0644 ${FLATPAK_ID}.metainfo.xml ${FLATPAK_DEST}/share/appdata/${FLATPAK_ID}.metainfo.xml"
+            ],
+            "sources": [
+                {
+                    "type": "file",
+                    "path": "apply_extra.sh"
+                },
+                {
+                    "type": "file",
+                    "path": "gitkraken.sh"
+                },
+                {
+                    "type": "file",
+                    "path": "com.axosoft.GitKraken.metainfo.xml"
+                },
+                {
+                    "type": "extra-data",
+                    "filename": "gitkraken.deb",
+                    "url": "https://release.axocdn.com/linux/GitKraken-v6.4.1.deb",
+                    "sha256": "ab607dcb8d43752c802ffd112f9f1c5d7a63da3d79bb611c849f5b93d7e511f1",
+                    "size": 78079312,
+                    "x-checker-data": {
+                        "type": "html",
+                        "url": "https://www.gitkraken.com/download.html",
+                        "version-pattern": "Latest release: ((?:\\d+\\.)?(?:\\d+\\.)?\\d+)",
+                        "url-template": "https://release.axocdn.com/linux/GitKraken-v$version.deb"
+                    }
+                }
+            ]
         }
-      ]
-    },
-    {
-      "name": "gitkraken",
-      "buildsystem": "simple",
-      "build-commands": [
-        "install -Dm0755 apply_extra.sh ${FLATPAK_DEST}/bin/apply_extra",
-        "install -Dm0755 gitkraken.sh ${FLATPAK_DEST}/bin/gitkraken",
-        "install -Dm0644 ${FLATPAK_ID}.metainfo.xml ${FLATPAK_DEST}/share/appdata/${FLATPAK_ID}.metainfo.xml"
-      ],
-      "sources": [
-        {
-          "type": "file",
-          "path": "apply_extra.sh"
-        },
-        {
-          "type": "file",
-          "path": "gitkraken.sh"
-        },
-        {
-          "type": "file",
-          "path": "com.axosoft.GitKraken.metainfo.xml"
-        },
-        {
-          "type": "extra-data",
-          "filename": "gitkraken.deb",
-          "url": "https://release.axocdn.com/linux/GitKraken-v6.4.0.deb",
-          "sha256": "c2632208a3d434ba84b6c3273a427eef8c308645a1ad0b7027e1e6418acab0e7",
-          "size": 78070026,
-          "x-checker-data": {
-            "type": "html",
-            "url": "https://www.gitkraken.com/download.html",
-            "version-pattern": "Latest release: ((?:\\d+\\.)?(?:\\d+\\.)?\\d+)",
-            "url-template": "https://release.axocdn.com/linux/GitKraken-v$version.deb"
-          }
-        }
-      ]
-    }
-  ]
+    ]
 }
