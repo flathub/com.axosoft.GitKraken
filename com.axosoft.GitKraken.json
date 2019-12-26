@@ -65,14 +65,15 @@
                 {
                     "type": "archive",
                     "strip-components": 0,
-                    "url": "https://github.com/git-lfs/git-lfs/releases/download/v2.9.1/git-lfs-linux-amd64-v2.9.1.tar.gz",
-                    "sha256": "2a8e60cf51ec45aa0f4332aa0521d60ec75c76e485d13ebaeea915b9d70ea466",
+                    "url": "https://github-production-release-asset-2e65be.s3.amazonaws.com/13021798/55de9c00-1d21-11ea-998f-394e9a7dfea8?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAIWNJYAX4CSVEH53A%2F20191226%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20191226T120615Z&X-Amz-Expires=300&X-Amz-Signature=bbb9066f5b3d5fc352f1fa92145797f668ca298d1b94546675604e02d1b5d3f0&X-Amz-SignedHeaders=host&actor_id=0&response-content-disposition=attachment%3B%20filename%3Dgit-lfs-linux-amd64-v2.9.2.tar.gz&response-content-type=application%2Foctet-stream",
+                    "sha256": "04346234130e518d165bdc7e9964375bbeb3b98efabd042084530cc34288274c",
                     "x-checker-data": {
                         "type": "html",
                         "url": "https://github.com/git-lfs/git-lfs/releases/latest",
                         "version-pattern": "v(\\d+\\.\\d+\\.\\d+)",
                         "url-template": "https://github.com/git-lfs/git-lfs/releases/download/v$version/git-lfs-linux-amd64-v$version.tar.gz"
-                    }
+                    },
+                    "size": 4347041
                 }
             ]
         },
