@@ -28,6 +28,17 @@
     ],
     "modules": [
         {
+            "name": "zypak",
+            "sources": [
+                {
+                    "type": "git",
+                    "url": "https://github.com/refi64/zypak",
+                    "tag": "v2019.11beta.3",
+                    "commit": "8aff41c45ee648f718f64a5fd6346f9b0220946c"
+                }
+            ]
+        },
+        {
             "name": "ar",
             "buildsystem": "simple",
             "build-commands": [
