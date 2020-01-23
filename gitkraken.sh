@@ -2,4 +2,4 @@
 
 set -e
 
-exec env TMPDIR=$XDG_CACHE_HOME /app/extra/gitkraken/gitkraken "$@"
+exec env TMPDIR=$XDG_CACHE_HOME zypak-wrapper /app/extra/gitkraken/gitkraken "$@"
