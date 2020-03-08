@@ -16,6 +16,7 @@
         "--socket=x11",
         "--socket=pulseaudio",
         "--socket=ssh-auth",
+        "--socket=pcsc",
         "--share=network",
         "--device=dri",
         "--filesystem=host",
@@ -27,6 +28,28 @@
         "--talk-name=org.freedesktop.Flatpak"
     ],
     "modules": [
+        {
+            "name": "pcsc-lite",
+            "config-opts": [
+                "--disable-libudev",
+                "--disable-libsystemd",
+                "--without-systemdsystemunitdir",
+                "--disable-serial",
+                "--disable-usb",
+                "--disable-documentation"
+            ],
+            "post-install": [
+                "rm /app/sbin/pcscd",
+                "rmdir /app/sbin || true"
+            ],
+            "sources": [
+                {
+                    "type": "archive",
+                    "url": "https://github.com/LudovicRousseau/PCSC/archive/pcsc-1.8.26.tar.gz",
+                    "sha256": "87da93642ba45fdbec07462c9ffabecbdda02407719fa21402f20fa35910425a"
+                }
+            ]
+        },
         {
             "name": "ar",
             "buildsystem": "simple",
