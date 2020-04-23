@@ -6,8 +6,6 @@
     <name>GitKraken</name>
     <summary>For repo management, in-app code editing &amp; issue tracking.</summary>
 
-    <icon type="remote" height="256" width="256">https://dashboard.snapcraft.io/site_media/appmedia/2018/01/1.png</icon>
-
     <description>
         <p>NOTE: This wrapper is not verified by, affiliated with, or
             supported by Axosoft, LLC.</p>
