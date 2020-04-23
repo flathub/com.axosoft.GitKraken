@@ -29,6 +29,49 @@
     ],
     "modules": [
         {
+            "name": "ImageMagick",
+            "config-opts": [
+                "--enable-static=no",
+                "--with-modules",
+                "--disable-docs",
+                "--disable-deprecated",
+                "--without-autotrace",
+                "--without-bzlib",
+                "--without-djvu",
+                "--without-dps",
+                "--without-fftw",
+                "--without-fontconfig",
+                "--without-fpx",
+                "--without-freetype",
+                "--without-gvc",
+                "--without-jbig",
+                "--without-jpeg",
+                "--without-lcms",
+                "--without-lzma",
+                "--without-magick-plus-plus",
+                "--without-openexr",
+                "--without-openjp2",
+                "--without-pango",
+                "--without-raqm",
+                "--without-tiff",
+                "--without-webp",
+                "--without-wmf",
+                "--without-x",
+                "--without-xml",
+                "--without-zlib"
+            ],
+            "cleanup": [
+                "*"
+            ],
+            "sources": [
+                {
+                    "type": "archive",
+                    "url": "https://imagemagick.org/download/ImageMagick-7.0.10-7.tar.xz",
+                    "sha256": "7a0365e20eeef2129cb8ffee1acf1d21cdbc2ea8b57ce2941c6ca0e935d4f843"
+                }
+            ]
+        },
+        {
             "name": "pcsc-lite",
             "config-opts": [
                 "--disable-libudev",
@@ -56,13 +99,6 @@
             "build-commands": [
                 "install -Dm0755 /usr/lib/$(gcc -print-multiarch)/libbfd-*.so -t ${FLATPAK_DEST}/lib/",
                 "install -Dm0755 $(which ar) ${FLATPAK_DEST}/bin/"
-            ]
-        },
-        {
-            "name": "desktop-file-edit",
-            "buildsystem": "simple",
-            "build-commands": [
-                "install -Dm0755 $(which desktop-file-edit) ${FLATPAK_DEST}/bin/"
             ]
         },
         {
@@ -97,9 +133,7 @@
             "name": "gitkraken",
             "buildsystem": "simple",
             "build-commands": [
-                "install -Dm0755 apply_extra.sh ${FLATPAK_DEST}/bin/apply_extra",
-                "install -Dm0755 gitkraken.sh ${FLATPAK_DEST}/bin/gitkraken",
-                "install -Dm0644 ${FLATPAK_ID}.metainfo.xml ${FLATPAK_DEST}/share/appdata/${FLATPAK_ID}.metainfo.xml"
+                ". ${FLATPAK_BUILDER_BUILDDIR}/build"
             ],
             "sources": [
                 {
@@ -108,11 +142,29 @@
                 },
                 {
                     "type": "file",
+                    "path": "gitkraken-build.sh",
+                    "dest-filename": "build"
+                },
+                {
+                    "type": "file",
                     "path": "gitkraken.sh"
                 },
                 {
                     "type": "file",
                     "path": "com.axosoft.GitKraken.metainfo.xml"
+                },
+                {
+                    "type": "file",
+                    "dest-filename": "gitkraken.deb",
+                    "url": "https://release.axocdn.com/linux/GitKraken-v6.5.4.deb",
+                    "sha256": "19f8c6de22365a31245b33f6ea674d691c2d143d3590dea2763531bf3a445c3e",
+                    "size": 74362550,
+                    "x-checker-data": {
+                        "type": "html",
+                        "url": "https://www.gitkraken.com/download.html",
+                        "version-pattern": "Latest release: ((?:\\d+\\.)?(?:\\d+\\.)?\\d+)",
+                        "url-template": "https://release.axocdn.com/linux/GitKraken-v$version.deb"
+                    }
                 },
                 {
                     "type": "extra-data",
