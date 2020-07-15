@@ -66,7 +66,7 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://imagemagick.org/download/ImageMagick-7.0.10-7.tar.xz",
+                    "url": "https://imagemagick.org/download/releases/ImageMagick-7.0.10-7.tar.xz",
                     "sha256": "7a0365e20eeef2129cb8ffee1acf1d21cdbc2ea8b57ce2941c6ca0e935d4f843"
                 }
             ]
@@ -88,8 +88,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://github.com/LudovicRousseau/PCSC/archive/pcsc-1.8.26.tar.gz",
-                    "sha256": "87da93642ba45fdbec07462c9ffabecbdda02407719fa21402f20fa35910425a"
+                    "url": "https://github.com/LudovicRousseau/PCSC/archive/pcsc-1.9.0.tar.gz",
+                    "sha256": "9e9b332bf8d37123d0c29e0ac359140b64cfd2bdf7be341a8d39e49fda592df2"
                 }
             ]
         },
@@ -156,9 +156,9 @@
                 {
                     "type": "file",
                     "dest-filename": "gitkraken.deb",
-                    "url": "https://release.axocdn.com/linux/GitKraken-v7.0.1.deb",
-                    "sha256": "f582dbec53174593ed171dc7111818b6f3802a48a5512c4621b22d26b86a6a19",
-                    "size": 75109702,
+                    "url": "https://release.axocdn.com/linux/GitKraken-v7.1.0.deb",
+                    "sha256": "fc2232c8a23d44aae7a1ef6026b749266d4ecd44c58cba5852c54cac05025661",
+                    "size": 75142008,
                     "x-checker-data": {
                         "type": "html",
                         "url": "https://www.gitkraken.com/download.html",
@@ -169,9 +169,9 @@
                 {
                     "type": "extra-data",
                     "filename": "gitkraken.deb",
-                    "url": "https://release.axocdn.com/linux/GitKraken-v7.0.1.deb",
-                    "sha256": "f582dbec53174593ed171dc7111818b6f3802a48a5512c4621b22d26b86a6a19",
-                    "size": 75109702,
+                    "url": "https://release.axocdn.com/linux/GitKraken-v7.1.0.deb",
+                    "sha256": "fc2232c8a23d44aae7a1ef6026b749266d4ecd44c58cba5852c54cac05025661",
+                    "size": 75142008,
                     "x-checker-data": {
                         "type": "html",
                         "url": "https://www.gitkraken.com/download.html",
