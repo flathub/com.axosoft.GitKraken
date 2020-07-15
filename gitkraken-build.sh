@@ -4,7 +4,7 @@ set -eux
 
 install -Dm0755 apply_extra.sh ${FLATPAK_DEST}/bin/apply_extra
 install -Dm0755 gitkraken.sh ${FLATPAK_DEST}/bin/gitkraken
-install -Dm0644 ${FLATPAK_ID}.metainfo.xml ${FLATPAK_DEST}/share/appdata/${FLATPAK_ID}.metainfo.xml
+install -Dm0644 ${FLATPAK_ID}.metainfo.xml ${FLATPAK_DEST}/share/metainfo/${FLATPAK_ID}.metainfo.xml
 
 ar p gitkraken.deb data.tar.xz | tar -xJf -
 
