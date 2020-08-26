@@ -156,9 +156,9 @@
                 {
                     "type": "file",
                     "dest-filename": "gitkraken.deb",
-                    "url": "https://release.axocdn.com/linux/GitKraken-v7.2.0.deb",
-                    "sha256": "e1d918715fedb2f58dfb6b032e8e8c08aa00c9516a23c02d9af5a882eda56a68",
-                    "size": 75350002,
+                    "url": "https://release.axocdn.com/linux/GitKraken-v7.3.0.deb",
+                    "sha256": "f8f73432edfd3f9ae6c5d714e94fb42dfdf70fbf3c4ef08b8838e9c19263186e",
+                    "size": 80285680,
                     "x-checker-data": {
                         "type": "html",
                         "url": "https://www.gitkraken.com/download.html",
@@ -169,9 +169,9 @@
                 {
                     "type": "extra-data",
                     "filename": "gitkraken.deb",
-                    "url": "https://release.axocdn.com/linux/GitKraken-v7.2.0.deb",
-                    "sha256": "e1d918715fedb2f58dfb6b032e8e8c08aa00c9516a23c02d9af5a882eda56a68",
-                    "size": 75350002,
+                    "url": "https://release.axocdn.com/linux/GitKraken-v7.3.0.deb",
+                    "sha256": "f8f73432edfd3f9ae6c5d714e94fb42dfdf70fbf3c4ef08b8838e9c19263186e",
+                    "size": 80285680,
                     "x-checker-data": {
                         "type": "html",
                         "url": "https://www.gitkraken.com/download.html",
