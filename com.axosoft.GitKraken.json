@@ -92,7 +92,12 @@
                 {
                     "type": "archive",
                     "url": "https://github.com/LudovicRousseau/PCSC/archive/pcsc-1.9.0.tar.gz",
-                    "sha256": "9e9b332bf8d37123d0c29e0ac359140b64cfd2bdf7be341a8d39e49fda592df2"
+                    "sha256": "9e9b332bf8d37123d0c29e0ac359140b64cfd2bdf7be341a8d39e49fda592df2",
+                    "x-checker-data": {
+                        "type": "anitya",
+                        "project-id": 2611,
+                        "url-template": "https://salsa.debian.org/rousseau/PCSC/-/archive/$version/PCSC-$version.tar.bz2"
+                    }
                 }
             ]
         },
@@ -128,7 +133,12 @@
                     "type": "archive",
                     "strip-components": 0,
                     "url": "https://github.com/git-lfs/git-lfs/releases/download/v2.11.0/git-lfs-linux-amd64-v2.11.0.tar.gz",
-                    "sha256": "46508eb932c2ec0003a940f179246708d4ddc2fec439dcacbf20ff9e98b957c9"
+                    "sha256": "46508eb932c2ec0003a940f179246708d4ddc2fec439dcacbf20ff9e98b957c9",
+                    "x-checker-data": {
+                        "type": "anitya",
+                        "project-id": 11551,
+                        "url-template": "https://github.com/git-lfs/git-lfs/releases/download/v$version/git-lfs-linux-amd64-v$version.tar.gz"
+                    }
                 }
             ]
         },
@@ -178,7 +188,8 @@
                         "type": "html",
                         "url": "https://www.gitkraken.com/download.html",
                         "version-pattern": "Latest release: ((?:\\d+\\.)?(?:\\d+\\.)?\\d+)",
-                        "url-template": "https://release.axocdn.com/linux/GitKraken-v$version.deb"
+                        "url-template": "https://release.axocdn.com/linux/GitKraken-v$version.deb",
+                        "is-main-source": true
                     }
                 }
             ]
