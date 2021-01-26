@@ -91,8 +91,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://github.com/LudovicRousseau/PCSC/archive/pcsc-1.9.0.tar.gz",
-                    "sha256": "9e9b332bf8d37123d0c29e0ac359140b64cfd2bdf7be341a8d39e49fda592df2",
+                    "url": "https://salsa.debian.org/rousseau/PCSC/-/archive/1.9.0/PCSC-1.9.0.tar.bz2",
+                    "sha256": "ed28807ab38516c2d95a8a195a4a8ac1d00d3105de8ac76dc3af8e067dd50338",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 2611,
@@ -132,8 +132,8 @@
                 {
                     "type": "archive",
                     "strip-components": 0,
-                    "url": "https://github.com/git-lfs/git-lfs/releases/download/v2.11.0/git-lfs-linux-amd64-v2.11.0.tar.gz",
-                    "sha256": "46508eb932c2ec0003a940f179246708d4ddc2fec439dcacbf20ff9e98b957c9",
+                    "url": "https://github.com/git-lfs/git-lfs/releases/download/v2.13.2/git-lfs-linux-amd64-v2.13.2.tar.gz",
+                    "sha256": "7913f267c84518860551384313ece6f2e72cb5a18cf9987189a087108346267d",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 11551,
