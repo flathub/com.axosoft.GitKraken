@@ -71,6 +71,7 @@
     <url type="help">https://www.gitkraken.com/contact</url>
 
     <releases>
+        <release version="7.5.3" date="2021-03-25"/>
         <release version="7.5.2" date="2021-03-01"/>
         <release version="7.5.1" date="2021-02-08"/>
         <release version="7.5.0" date="2021-01-20"/>
