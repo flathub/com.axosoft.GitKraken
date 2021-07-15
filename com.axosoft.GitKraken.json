@@ -166,7 +166,7 @@
                     "sha256": "c1c3d6c500bb2dd28a95b40e7491fdd5a9afbf51b06b5cd71e0af997ec5e2cae",
                     "x-checker-data": {
                         "type": "html",
-                        "url": "https://www.gitkraken.com/download.html",
+                        "url": "https://www.gitkraken.com/download",
                         "version-pattern": "Latest release: ((?:\\d+\\.)?(?:\\d+\\.)?\\d+)",
                         "url-template": "https://release.axocdn.com/linux/GitKraken-v$version.deb"
                     }
@@ -179,7 +179,7 @@
                     "size": 78839026,
                     "x-checker-data": {
                         "type": "html",
-                        "url": "https://www.gitkraken.com/download.html",
+                        "url": "https://www.gitkraken.com/download",
                         "version-pattern": "Latest release: ((?:\\d+\\.)?(?:\\d+\\.)?\\d+)",
                         "url-template": "https://release.axocdn.com/linux/GitKraken-v$version.deb",
                         "is-main-source": true
