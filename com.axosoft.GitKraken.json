@@ -1,10 +1,10 @@
 {
     "id": "com.axosoft.GitKraken",
     "runtime": "org.gnome.Platform",
-    "runtime-version": "40",
+    "runtime-version": "41",
     "sdk": "org.gnome.Sdk",
     "base": "org.electronjs.Electron2.BaseApp",
-    "base-version": "20.08",
+    "base-version": "21.08",
     "command": "gitkraken",
     "tags": [
         "proprietary"
@@ -107,7 +107,6 @@
             "buildsystem": "simple",
             "build-commands": [
                 "install -Dm0755 $(which git) ${FLATPAK_DEST}/bin/",
-                "install -Dm0755 $(which git-clang-format) ${FLATPAK_DEST}/bin/",
                 "install -Dm0755 $(which git-cvsserver) ${FLATPAK_DEST}/bin/",
                 "install -Dm0755 $(which git-receive-pack) ${FLATPAK_DEST}/bin/",
                 "install -Dm0755 $(which git-shell) ${FLATPAK_DEST}/bin/",
