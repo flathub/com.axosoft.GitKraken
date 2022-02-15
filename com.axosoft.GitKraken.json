@@ -124,8 +124,8 @@
                 {
                     "type": "archive",
                     "strip-components": 0,
-                    "url": "https://github.com/git-lfs/git-lfs/releases/download/v3.0.2/git-lfs-linux-amd64-v3.0.2.tar.gz",
-                    "sha256": "796f5ea0259eabe57f94a8ad1bb0d46806168df30b135a65d88f8a7ee1409e0b",
+                    "url": "https://github.com/git-lfs/git-lfs/releases/download/v3.1.1/git-lfs-linux-amd64-v3.1.1.tar.gz",
+                    "sha256": "fcc676de982336fd7542c62e58a93bc21291ef2e33659a23148e1b466b198bd4",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 11551,
