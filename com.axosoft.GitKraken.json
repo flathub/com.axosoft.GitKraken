@@ -1,8 +1,8 @@
 {
     "id": "com.axosoft.GitKraken",
-    "runtime": "org.gnome.Platform",
-    "runtime-version": "42",
-    "sdk": "org.gnome.Sdk",
+    "runtime": "org.freedesktop.Sdk",
+    "runtime-version": "21.08",
+    "sdk": "org.freedesktop.Sdk",
     "sdk-extensions": [
         "org.freedesktop.Sdk.Extension.golang"
     ],
@@ -81,6 +81,58 @@
                 }
             ]
         },
+        "shared-modules/libsecret/libsecret.json",
+        {
+            "name": "krb5",
+            "subdir": "src",
+            "config-opts": [
+                "--localstatedir=/var/lib",
+                "--sbindir=${FLATPAK_DEST}/bin",
+                "--disable-static",
+                "--disable-rpath"
+            ],
+            "sources": [
+                {
+                    "type": "archive",
+                    "url": "https://github.com/krb5/krb5/archive/refs/tags/krb5-1.19.3-final.tar.gz",
+                    "sha256": "131890da54fff2ac339e93facf9d8067f7db53b15181f38104c0b56a6f2acdee",
+                    "x-checker-data": {
+                        "type": "anitya",
+                        "project-id": 13287,
+                        "stable-only": true,
+                        "url-template": "https://github.com/krb5/krb5/archive/refs/tags/krb5-$version.tar.gz"
+                    }
+                },
+                {
+                    "type": "shell",
+                    "dest": "src",
+                    "commands": [
+                        "autoreconf -si"
+                    ]
+                }
+            ],
+            "cleanup": [
+                "/bin",
+                "/include",
+                "/lib/pkgconfig",
+                "/share/et",
+                "/share/examples",
+                "/share/man"
+            ]
+        },
+        {
+            "name": "krb5-config",
+            "buildsystem": "simple",
+            "build-commands": [
+                "install -Dm0644 krb5.conf -t /app/etc/"
+            ],
+            "sources": [
+                {
+                    "type": "file",
+                    "path": "files/krb5/krb5.conf"
+                }
+            ]
+        },
         {
             "name": "pcsc-lite",
             "config-opts": [
@@ -90,6 +142,10 @@
                 "--disable-serial",
                 "--disable-usb",
                 "--disable-documentation"
+            ],
+            "cleanup": [
+                "/include",
+                "/lib/pkgconfig"
             ],
             "post-install": [
                 "rm /app/sbin/pcscd",
@@ -106,18 +162,6 @@
                         "url-template": "https://salsa.debian.org/rousseau/PCSC/-/archive/$version/PCSC-$version.tar.bz2"
                     }
                 }
-            ]
-        },
-        {
-            "name": "git",
-            "buildsystem": "simple",
-            "build-commands": [
-                "install -Dm0755 $(which git) ${FLATPAK_DEST}/bin/",
-                "install -Dm0755 $(which git-cvsserver) ${FLATPAK_DEST}/bin/",
-                "install -Dm0755 $(which git-receive-pack) ${FLATPAK_DEST}/bin/",
-                "install -Dm0755 $(which git-shell) ${FLATPAK_DEST}/bin/",
-                "install -Dm0755 $(which git-upload-archive) ${FLATPAK_DEST}/bin/",
-                "install -Dm0755 $(which git-upload-pack) ${FLATPAK_DEST}/bin/"
             ]
         },
         {
