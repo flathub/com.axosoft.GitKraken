@@ -71,6 +71,7 @@
     <url type="help">https://www.gitkraken.com/contact</url>
 
     <releases>
+        <release version="8.8.0" date="2022-08-10"/>
         <release version="8.7.0" date="2022-07-12"/>
         <release version="8.6.0" date="2022-06-14"/>
         <release version="8.5.0" date="2022-05-17"/>
