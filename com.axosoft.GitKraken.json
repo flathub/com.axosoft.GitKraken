@@ -154,8 +154,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://salsa.debian.org/rousseau/PCSC/-/archive/1.9.8/PCSC-1.9.8.tar.bz2",
-                    "sha256": "b6719d07971f8b273537020393bcbc5f9ca7a463c458cc3ab0fd9966560824cc",
+                    "url": "https://salsa.debian.org/rousseau/PCSC/-/archive/1.9.9/PCSC-1.9.9.tar.bz2",
+                    "sha256": "09067c3d807ab11509565899b7a46aec8dffd9e14bee9e6e2cdfddd9f8f49173",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 2611,
