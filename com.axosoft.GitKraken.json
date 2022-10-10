@@ -28,11 +28,9 @@
         "--filesystem=/run/media",
         "--filesystem=xdg-run/gvfs",
         "--filesystem=xdg-run/gvfsd",
-        "--talk-name=org.gtk.vfs",
         "--talk-name=org.gtk.vfs.*",
         "--talk-name=org.freedesktop.Notifications",
-        "--talk-name=org.freedesktop.secrets",
-        "--talk-name=org.freedesktop.Flatpak"
+        "--talk-name=org.freedesktop.secrets"
     ],
     "build-options": {
         "append-path": "/usr/lib/sdk/golang/bin"
@@ -218,8 +216,8 @@
                 {
                     "type": "file",
                     "dest-filename": "gitkraken.deb",
-                    "url": "https://release.axocdn.com/linux/GitKraken-v8.9.1.deb",
-                    "sha256": "eb657b19f1bbca8fd923cbdfe651e9fd786ab73fa31ef34fcfba62ceebd09a10",
+                    "url": "https://release.axocdn.com/linux/GitKraken-v8.10.0.deb",
+                    "sha256": "6c4cd93c88986a6a5621c9d85c68bbf976547295638aa990f63992193934be2b",
                     "x-checker-data": {
                         "type": "html",
                         "url": "https://www.gitkraken.com/download",
@@ -230,9 +228,9 @@
                 {
                     "type": "extra-data",
                     "filename": "gitkraken.deb",
-                    "url": "https://release.axocdn.com/linux/GitKraken-v8.9.1.deb",
-                    "sha256": "eb657b19f1bbca8fd923cbdfe651e9fd786ab73fa31ef34fcfba62ceebd09a10",
-                    "size": 89176920,
+                    "url": "https://release.axocdn.com/linux/GitKraken-v8.10.0.deb",
+                    "sha256": "6c4cd93c88986a6a5621c9d85c68bbf976547295638aa990f63992193934be2b",
+                    "size": 92026876,
                     "x-checker-data": {
                         "type": "html",
                         "url": "https://www.gitkraken.com/download",
