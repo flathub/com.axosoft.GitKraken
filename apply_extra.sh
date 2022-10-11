@@ -11,4 +11,6 @@ bsdtar -Oxf gitkraken.deb 'data.tar.*' |
     --exclude='./usr/share/lintian/' \
     --exclude='./usr/share/pixmaps/'
 
+chmod 0755 gitkraken/chrome_crashpad_handler
+
 rm -rf gitkraken.deb
