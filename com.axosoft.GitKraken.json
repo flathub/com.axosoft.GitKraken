@@ -178,8 +178,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://github.com/git-lfs/git-lfs/releases/download/v3.2.0/git-lfs-v3.2.0.tar.gz",
-                    "sha256": "f8e6bbe043b97db8a5c16da7289e149a3fed9f4d4f11cffcc6e517c7870cd9e5",
+                    "url": "https://github.com/git-lfs/git-lfs/releases/download/v3.3.0/git-lfs-v3.3.0.tar.gz",
+                    "sha256": "964c200bb7dcd6da44cbf0cfa88575f7e48d26925f8ec86d634d3f83306a0920",
                     "x-checker-data": {
                         "type": "json",
                         "url": "https://api.github.com/repos/git-lfs/git-lfs/releases/latest",
@@ -216,8 +216,8 @@
                 {
                     "type": "file",
                     "dest-filename": "gitkraken.deb",
-                    "url": "https://release.axocdn.com/linux/GitKraken-v8.10.3.deb",
-                    "sha256": "920fc59badea7b2fc39ab0d8823b31192252769ad3a25f961fb4e0a7acac3083",
+                    "url": "https://release.axocdn.com/linux/GitKraken-v9.0.0.deb",
+                    "sha256": "9c690ecf4f49d07a26e36f6e6300d68553c2a383c4bc270d18e2f923d97ca6f2",
                     "x-checker-data": {
                         "type": "html",
                         "url": "https://www.gitkraken.com/download",
@@ -228,9 +228,9 @@
                 {
                     "type": "extra-data",
                     "filename": "gitkraken.deb",
-                    "url": "https://release.axocdn.com/linux/GitKraken-v8.10.3.deb",
-                    "sha256": "920fc59badea7b2fc39ab0d8823b31192252769ad3a25f961fb4e0a7acac3083",
-                    "size": 89019412,
+                    "url": "https://release.axocdn.com/linux/GitKraken-v9.0.0.deb",
+                    "sha256": "9c690ecf4f49d07a26e36f6e6300d68553c2a383c4bc270d18e2f923d97ca6f2",
+                    "size": 94465272,
                     "x-checker-data": {
                         "type": "html",
                         "url": "https://www.gitkraken.com/download",
