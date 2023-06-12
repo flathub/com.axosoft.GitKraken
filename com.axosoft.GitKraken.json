@@ -146,8 +146,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://salsa.debian.org/rousseau/PCSC/-/archive/1.9.9/PCSC-1.9.9.tar.bz2",
-                    "sha256": "09067c3d807ab11509565899b7a46aec8dffd9e14bee9e6e2cdfddd9f8f49173",
+                    "url": "https://salsa.debian.org/rousseau/PCSC/-/archive/2.0.0/PCSC-2.0.0.tar.bz2",
+                    "sha256": "d85195b9139d120cb6ba20199a19d3ef4aecdb7922eaead62994c704ea3da19e",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 2611,
@@ -204,8 +204,8 @@
                 {
                     "type": "file",
                     "dest-filename": "gitkraken.deb",
-                    "url": "https://release.axocdn.com/linux/GitKraken-v9.5.0.deb",
-                    "sha256": "511d21884776ec700f474484d34746009141a420893268ab53d142bac5f5a99f",
+                    "url": "https://release.axocdn.com/linux/GitKraken-v9.5.1.deb",
+                    "sha256": "b54b9955fc5fe277240702452a98ceb28032f59f3b292c7d65bbbc6d94a9a3cb",
                     "x-checker-data": {
                         "type": "html",
                         "url": "https://www.gitkraken.com/download",
@@ -216,9 +216,9 @@
                 {
                     "type": "extra-data",
                     "filename": "gitkraken.deb",
-                    "url": "https://release.axocdn.com/linux/GitKraken-v9.5.0.deb",
-                    "sha256": "511d21884776ec700f474484d34746009141a420893268ab53d142bac5f5a99f",
-                    "size": 123833480,
+                    "url": "https://release.axocdn.com/linux/GitKraken-v9.5.1.deb",
+                    "sha256": "b54b9955fc5fe277240702452a98ceb28032f59f3b292c7d65bbbc6d94a9a3cb",
+                    "size": 123844832,
                     "x-checker-data": {
                         "type": "html",
                         "url": "https://www.gitkraken.com/download",
