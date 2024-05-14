@@ -73,7 +73,6 @@
                 }
             ]
         },
-        "shared-modules/libsecret/libsecret.json",
         {
             "name": "krb5",
             "subdir": "src",
