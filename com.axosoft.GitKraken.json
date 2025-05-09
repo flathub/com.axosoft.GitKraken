@@ -205,7 +205,7 @@
                     "type": "file",
                     "dest-filename": "gitkraken.deb",
                     "url": "https://release.axocdn.com/linux/gitkraken-amd64.deb",
-                    "sha256": "b0acfc5daab1556b7148c6669c80952493bc4f7a39ca2d834afb143660890c4b",
+                    "sha256": "0d93f607e378ca36fdc495a260aa3aff2906e17db275573114b46b50c5199cc8",
                     "x-checker-data": {
                         "type": "html",
                         "url": "https://www.gitkraken.com/download",
