@@ -204,26 +204,26 @@
                 {
                     "type": "file",
                     "dest-filename": "gitkraken.deb",
-                    "url": "https://release.axocdn.com/linux/gitkraken-amd64.deb",
+                    "url": "https://release.axocdn.com/linux/GitKraken-v11.1.0.deb",
                     "sha256": "0d93f607e378ca36fdc495a260aa3aff2906e17db275573114b46b50c5199cc8",
                     "x-checker-data": {
                         "type": "html",
                         "url": "https://www.gitkraken.com/download",
                         "version-pattern": "Latest release: ((?:\\d+\\.)?(?:\\d+\\.)?\\d+)",
-                        "url-template": "https://release.axocdn.com/linux/gitkraken-amd64.deb"
+                        "url-template": "https://release.axocdn.com/linux/GitKraken-v$version.deb"
                     }
                 },
                 {
                     "type": "extra-data",
                     "filename": "gitkraken.deb",
-                    "url": "https://release.axocdn.com/linux/gitkraken-amd64.deb",
+                    "url": "https://release.axocdn.com/linux/GitKraken-v11.1.0.deb",
                     "sha256": "0d93f607e378ca36fdc495a260aa3aff2906e17db275573114b46b50c5199cc8",
                     "size": 143317588,
                     "x-checker-data": {
                         "type": "html",
                         "url": "https://www.gitkraken.com/download",
                         "version-pattern": "Latest release: ((?:\\d+\\.)?(?:\\d+\\.)?\\d+)",
-                        "url-template": "https://release.axocdn.com/linux/gitkraken-amd64.deb",
+                        "url-template": "https://release.axocdn.com/linux/GitKraken-v$version.deb",
                         "is-main-source": true
                     }
                 }
