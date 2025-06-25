@@ -71,8 +71,11 @@
     <url type="help">https://www.gitkraken.com/contact</url>
 
     <releases>
-        <release version="11.1.1" date="2025-05-14">
+        <release version="11.2.0" date="2025-06-17">
             <description></description>
+        </release>
+        <release version="11.1.1" date="2025-05-14">
+            <description/>
         </release>
         <release version="11.1.0" date="2025-05-06">
             <description/>
