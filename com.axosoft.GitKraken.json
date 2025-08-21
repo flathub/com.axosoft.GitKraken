@@ -85,8 +85,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://github.com/krb5/krb5/archive/refs/tags/krb5-1.22-final.tar.gz",
-                    "sha256": "686f7251da4b1ffcba1112b4b25c888890dac3227f9b84151bb41fce4ffc2d78",
+                    "url": "https://github.com/krb5/krb5/archive/refs/tags/krb5-1.22.1-final.tar.gz",
+                    "sha256": "d7dd1ded54c1c2d3381da4a266935feda6ba6398155720df27e2975bd5a39239",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 13287,
