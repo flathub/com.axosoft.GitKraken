@@ -10,6 +10,15 @@
         "proprietary"
     ],
     "separate-locales": false,
+    "add-extensions": {
+        "com.axosoft.GitKraken.plugin": {
+            "directory": "plugin",
+            "subdirectories": true,
+            "merge-dirs": "bin",
+            "no-autodownload": true,
+            "autodelete": true
+        }
+    },
     "finish-args": [
         "--require-version=0.11.1",
         "--share=ipc",
@@ -225,6 +234,26 @@
                         "version-pattern": "Latest release: ((?:\\d+\\.)?(?:\\d+\\.)?\\d+)",
                         "url-template": "https://api.gitkraken.dev/releases/production/linux/x64/$version/gitkraken-amd64.deb",
                         "is-main-source": true
+                    }
+                }
+            ]
+        },
+        {
+            "name": "gk",
+            "buildsystem": "simple",
+            "build-commands": [
+                "install -Dm755 gk ${FLATPAK_DEST}/plugin/gk/bin/gk"
+            ],
+            "sources": [
+                {
+                    "type": "archive",
+                    "url": "https://github.com/gitkraken/gk-cli/releases/download/v3.1.40/gk_3.1.40_linux_amd64.zip",
+                    "sha256": "7b0f87f204f1e2986bdc8ff8106031f3df23a01e2ae41cf38bf06ab12b2dd5e5",
+                    "x-checker-data": {
+                        "type": "json",
+                        "url": "https://api.github.com/repos/gitkraken/gk-cli/releases/latest",
+                        "version-query": ".tag_name | sub(\"^v\"; \"\")",
+                        "url-query": ".assets[] | select(.name==\"gk_\" + $version + \"_linux_amd64.zip\") | .browser_download_url"
                     }
                 }
             ]

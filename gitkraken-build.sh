@@ -26,3 +26,5 @@ for size in 64 128 264 512; do
     convert pixmaps/gitkraken.png -resize "${size}" "${FLATPAK_ID}.png"
     install -Dm0644 "${FLATPAK_ID}.png" "${FLATPAK_DEST}/share/icons/hicolor/${size}x${size}/apps/${FLATPAK_ID}.png"
 done
+
+mkdir -p "${FLATPAK_DEST}/plugin/bin"
