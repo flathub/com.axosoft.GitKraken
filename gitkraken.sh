@@ -9,4 +9,4 @@ if [ ! -f "$FLAG_FILE" ]; then
     touch "$FLAG_FILE"
 fi
 
-exec env TMPDIR="$XDG_CACHE_HOME" zypak-wrapper /app/extra/gitkraken/gitkraken "$@"
+exec env TMPDIR="$XDG_CACHE_HOME" PATH="$PATH:/app/plugin/bin" zypak-wrapper /app/extra/gitkraken/gitkraken "$@"
