@@ -55,16 +55,20 @@
 
     <screenshots>
         <screenshot type="default">
-            <image>https://dashboard.snapcraft.io/site_media/appmedia/2018/11/pull-requests_1oUC7KR.png</image>
-            <caption>Creating a pull request</caption>
-        </screenshot>
-        <screenshot>
-            <image>https://dashboard.snapcraft.io/site_media/appmedia/2018/11/graph.png</image>
+            <image>https://raw.githubusercontent.com/flathub/com.axosoft.GitKraken/db3dfb0d546fec39aa041bb2b9a224a23b787f2d/images/graph-overview.png</image>
             <caption>Looking at past commits in the graph overview</caption>
         </screenshot>
         <screenshot>
-            <image>https://dashboard.snapcraft.io/site_media/appmedia/2018/11/merge-conflict.png</image>
-            <caption>Resolving a merge-conflict</caption>
+            <image>https://raw.githubusercontent.com/flathub/com.axosoft.GitKraken/db3dfb0d546fec39aa041bb2b9a224a23b787f2d/images/launchpad.png</image>
+            <caption>Launching a new project</caption>
+        </screenshot>
+        <screenshot>
+            <image>https://raw.githubusercontent.com/flathub/com.axosoft.GitKraken/db3dfb0d546fec39aa041bb2b9a224a23b787f2d/images/preferences.png</image>
+            <caption>Changing preferences</caption>
+        </screenshot>
+        <screenshot>
+            <image>https://raw.githubusercontent.com/flathub/com.axosoft.GitKraken/db3dfb0d546fec39aa041bb2b9a224a23b787f2d/images/sign-in.png</image>
+            <caption>Logging in using various methods</caption>
         </screenshot>
     </screenshots>
 
