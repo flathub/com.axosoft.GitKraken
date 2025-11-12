@@ -13,7 +13,8 @@
     "finish-args": [
         "--require-version=0.11.1",
         "--share=ipc",
-        "--socket=x11",
+        "--socket=wayland",
+        "--socket=fallback-x11",
         "--socket=pulseaudio",
         "--socket=ssh-auth",
         "--socket=pcsc",
@@ -204,8 +205,8 @@
                 {
                     "type": "file",
                     "dest-filename": "gitkraken.deb",
-                    "url": "https://api.gitkraken.dev/releases/production/linux/x64/11.5.1/gitkraken-amd64.deb",
-                    "sha256": "b92ec81d4185d8c42a8082f5fcb7481cfd228057fb816d731b66724853f7c3d8",
+                    "url": "https://api.gitkraken.dev/releases/production/linux/x64/11.6.0/gitkraken-amd64.deb",
+                    "sha256": "f8485720c89894cd73eaea6a205a54b43e77de59191bfe19c4ca69029832ea18",
                     "x-checker-data": {
                         "type": "html",
                         "url": "https://www.gitkraken.com/download",
@@ -216,9 +217,9 @@
                 {
                     "type": "extra-data",
                     "filename": "gitkraken.deb",
-                    "url": "https://api.gitkraken.dev/releases/production/linux/x64/11.5.1/gitkraken-amd64.deb",
-                    "sha256": "b92ec81d4185d8c42a8082f5fcb7481cfd228057fb816d731b66724853f7c3d8",
-                    "size": 146556884,
+                    "url": "https://api.gitkraken.dev/releases/production/linux/x64/11.6.0/gitkraken-amd64.deb",
+                    "sha256": "f8485720c89894cd73eaea6a205a54b43e77de59191bfe19c4ca69029832ea18",
+                    "size": 147719140,
                     "x-checker-data": {
                         "type": "html",
                         "url": "https://www.gitkraken.com/download",
