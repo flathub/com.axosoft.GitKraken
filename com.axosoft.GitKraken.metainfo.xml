@@ -4,11 +4,10 @@
     <metadata_license>CC0-1.0</metadata_license>
     <project_license>LicenseRef-proprietary</project_license>
     <name>GitKraken</name>
-    <summary>For repo management, in-app code editing &amp; issue tracking.</summary>
+    <summary>For repo management, in-app code editing &amp; issue tracking</summary>
 
     <description>
-        <p>NOTE: This wrapper is not verified by, affiliated with, or
-            supported by Axosoft, LLC.</p>
+        <p>**This wrapper is not verified by, affiliated with, or supported by Axosoft, LLC.**</p>
 
         <p>Git legendary, my friends.
             GitKraken includes two legendary products that make devs more productive: the Git Client and Glo Boards!</p>
@@ -57,12 +56,15 @@
     <screenshots>
         <screenshot type="default">
             <image>https://dashboard.snapcraft.io/site_media/appmedia/2018/11/pull-requests_1oUC7KR.png</image>
+            <caption>Creating a pull request</caption>
         </screenshot>
         <screenshot>
             <image>https://dashboard.snapcraft.io/site_media/appmedia/2018/11/graph.png</image>
+            <caption>Looking at past commits in the graph overview</caption>
         </screenshot>
         <screenshot>
             <image>https://dashboard.snapcraft.io/site_media/appmedia/2018/11/merge-conflict.png</image>
+            <caption>Resolving a merge-conflict</caption>
         </screenshot>
     </screenshots>
 
@@ -71,8 +73,11 @@
     <url type="help">https://www.gitkraken.com/contact</url>
 
     <releases>
-        <release version="11.5.1" date="2025-10-14">
+        <release version="11.6.0" date="2025-11-10">
             <description></description>
+        </release>
+        <release version="11.5.1" date="2025-10-14">
+            <description/>
         </release>
         <release version="11.5.0" date="2025-10-07">
             <description/>
