@@ -28,7 +28,8 @@
         "--filesystem=xdg-run/gvfsd",
         "--talk-name=org.gtk.vfs.*",
         "--talk-name=org.freedesktop.Notifications",
-        "--talk-name=org.freedesktop.secrets"
+        "--talk-name=org.freedesktop.secrets",
+        "--env=XCURSOR_PATH=run/host/user-share/icons:/run/host/share/icons"
     ],
     "modules": [
         {
