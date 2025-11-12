@@ -57,12 +57,15 @@
     <screenshots>
         <screenshot type="default">
             <image>https://dashboard.snapcraft.io/site_media/appmedia/2018/11/pull-requests_1oUC7KR.png</image>
+            <caption>Creating a pull request</caption>
         </screenshot>
         <screenshot>
             <image>https://dashboard.snapcraft.io/site_media/appmedia/2018/11/graph.png</image>
+            <caption>Looking at past commits in the graph overview</caption>
         </screenshot>
         <screenshot>
             <image>https://dashboard.snapcraft.io/site_media/appmedia/2018/11/merge-conflict.png</image>
+            <caption>Resolving a merge-conflict</caption>
         </screenshot>
     </screenshots>
 
