@@ -13,7 +13,8 @@
     "finish-args": [
         "--require-version=0.11.1",
         "--share=ipc",
-        "--socket=x11",
+        "--socket=wayland",
+        "--socket=fallback-x11",
         "--socket=pulseaudio",
         "--socket=ssh-auth",
         "--socket=pcsc",
