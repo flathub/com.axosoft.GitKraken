@@ -11,12 +11,11 @@
     ],
     "separate-locales": false,
     "add-extensions": {
-        "com.axosoft.GitKraken.plugin": {
-            "directory": "plugin",
-            "subdirectories": true,
-            "merge-dirs": "bin",
+        "com.axosoft.GitKraken.plugin.gk": {
+            "directory": "plugin/gk",
             "no-autodownload": true,
-            "autodelete": true
+            "autodelete": true,
+            "bundle": true
         }
     },
     "finish-args": [
