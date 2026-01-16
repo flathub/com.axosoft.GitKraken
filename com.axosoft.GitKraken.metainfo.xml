@@ -271,4 +271,10 @@
         <content_attribute id="social-info">mild</content_attribute>
         <content_attribute id="money-purchasing">intense</content_attribute>
     </content_rating>
+    <keywords>
+        <keyword>repo management tool</keyword>
+        <keyword>git client software</keyword>
+        <keyword>dev productivity suite</keyword>
+        <keyword>issue tracking app</keyword>
+    </keywords>
 </component>
