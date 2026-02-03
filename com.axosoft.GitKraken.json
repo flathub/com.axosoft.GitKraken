@@ -87,8 +87,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://github.com/krb5/krb5/archive/refs/tags/krb5-1.22.1-final.tar.gz",
-                    "sha256": "d7dd1ded54c1c2d3381da4a266935feda6ba6398155720df27e2975bd5a39239",
+                    "url": "https://github.com/krb5/krb5/archive/refs/tags/krb5-1.22.2-final.tar.gz",
+                    "sha256": "289f5bb81d1f2f8d5eecebe56a056aeed95d35fd9bb4a7071c5dd7ad4b3fe888",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 13287,
@@ -206,8 +206,8 @@
                 {
                     "type": "file",
                     "dest-filename": "gitkraken.deb",
-                    "url": "https://api.gitkraken.dev/releases/production/linux/x64/11.8.0/gitkraken-amd64.deb",
-                    "sha256": "4673301e59dbdb420b3fb30507794f77326286435eb02bcc6a7e10a658b72f18",
+                    "url": "https://api.gitkraken.dev/releases/production/linux/x64/11.9.0/gitkraken-amd64.deb",
+                    "sha256": "bbaf8b6ad500e6f3c13ba9cef826c63336eba0d8bd22bb5aeea3a418c8c301ba",
                     "x-checker-data": {
                         "type": "html",
                         "url": "https://www.gitkraken.com/download",
@@ -218,9 +218,9 @@
                 {
                     "type": "extra-data",
                     "filename": "gitkraken.deb",
-                    "url": "https://api.gitkraken.dev/releases/production/linux/x64/11.8.0/gitkraken-amd64.deb",
-                    "sha256": "4673301e59dbdb420b3fb30507794f77326286435eb02bcc6a7e10a658b72f18",
-                    "size": 146493436,
+                    "url": "https://api.gitkraken.dev/releases/production/linux/x64/11.9.0/gitkraken-amd64.deb",
+                    "sha256": "bbaf8b6ad500e6f3c13ba9cef826c63336eba0d8bd22bb5aeea3a418c8c301ba",
+                    "size": 150892052,
                     "x-checker-data": {
                         "type": "html",
                         "url": "https://www.gitkraken.com/download",
