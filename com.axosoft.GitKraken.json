@@ -210,8 +210,8 @@
                     "sha256": "bbaf8b6ad500e6f3c13ba9cef826c63336eba0d8bd22bb5aeea3a418c8c301ba",
                     "x-checker-data": {
                         "type": "html",
-                        "url": "https://www.gitkraken.com/download",
-                        "version-pattern": "Latest release: ((?:\\d+\\.)?(?:\\d+\\.)?\\d+)",
+                        "url": "https://help.gitkraken.com/gitkraken-desktop/current/",
+                        "version-pattern": "Version ((?:\\d+\\.)?(?:\\d+\\.)?\\d+)",
                         "url-template": "https://api.gitkraken.dev/releases/production/linux/x64/$version/gitkraken-amd64.deb"
                     }
                 },
@@ -223,8 +223,8 @@
                     "size": 150892052,
                     "x-checker-data": {
                         "type": "html",
-                        "url": "https://www.gitkraken.com/download",
-                        "version-pattern": "Latest release: ((?:\\d+\\.)?(?:\\d+\\.)?\\d+)",
+                        "url": "https://help.gitkraken.com/gitkraken-desktop/current/",
+                        "version-pattern": "Version ((?:\\d+\\.)?(?:\\d+\\.)?\\d+)",
                         "url-template": "https://api.gitkraken.dev/releases/production/linux/x64/$version/gitkraken-amd64.deb",
                         "is-main-source": true
                     }
