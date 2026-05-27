@@ -71,18 +71,35 @@
                 {
                     "type": "archive",
                     "url": "https://imagemagick.org/archive/releases/ImageMagick-7.0.10-7.tar.xz",
-                    "sha256": "7a0365e20eeef2129cb8ffee1acf1d21cdbc2ea8b57ce2941c6ca0e935d4f843"
+                    "sha256": "7a0365e20eeef2129cb8ffee1acf1d21cdbc2ea8b57ce2941c6ca0e935d4f843",
+                    "x-checker-data": {
+                        "type": "anitya",
+                        "project-id": 1372,
+                        "stable-only": true,
+                        "url-template": "https://github.com/ImageMagick/ImageMagick/archive/${version}.tar.gz"
+                    }
                 }
             ]
         },
         {
             "name": "krb5",
             "subdir": "src",
+            "buildsystem": "autotools",
             "config-opts": [
                 "--localstatedir=/var/lib",
                 "--sbindir=${FLATPAK_DEST}/bin",
                 "--disable-static",
                 "--disable-rpath"
+            ],
+            "cleanup": [
+                "/bin",
+                "/include",
+                "/lib/pkgconfig",
+                "/sbin",
+                "/share/et",
+                "/share/examples",
+                "/share/man",
+                "/var"
             ],
             "sources": [
                 {
@@ -103,14 +120,6 @@
                         "autoreconf -si"
                     ]
                 }
-            ],
-            "cleanup": [
-                "/bin",
-                "/include",
-                "/lib/pkgconfig",
-                "/share/et",
-                "/share/examples",
-                "/share/man"
             ]
         },
         {
@@ -128,6 +137,7 @@
         },
         {
             "name": "pcsc-lite",
+            "buildsystem": "autotools",
             "config-opts": [
                 "--disable-libudev",
                 "--disable-libsystemd",
@@ -153,6 +163,7 @@
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 2611,
+                        "stable-only": true,
                         "url-template": "https://salsa.debian.org/rousseau/PCSC/-/archive/$version/PCSC-$version.tar.bz2"
                     }
                 }
