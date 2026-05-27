@@ -70,8 +70,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://imagemagick.org/archive/releases/ImageMagick-7.0.10-7.tar.xz",
-                    "sha256": "7a0365e20eeef2129cb8ffee1acf1d21cdbc2ea8b57ce2941c6ca0e935d4f843",
+                    "url": "https://github.com/ImageMagick/ImageMagick/archive/7.1.2-24.tar.gz",
+                    "sha256": "645f1dc68482ba952a02a854ffaf67efca42871b168e0cf702a043db2ec54638",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 1372,
@@ -158,8 +158,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://salsa.debian.org/rousseau/PCSC/-/archive/2.4.1/PCSC-2.4.1.tar.bz2",
-                    "sha256": "b10104a92b9c066a2d02cc2d8b539cb3a9f720d217799233dbe1dc1234b0aeaa",
+                    "url": "https://salsa.debian.org/rousseau/PCSC/-/archive/2.5.0/PCSC-2.5.0.tar.bz2",
+                    "sha256": "09526e0b6bc597ca82d58c269f9d6cac046fe53e7e73f34fdd864081a69c5d64",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 2611,
