@@ -137,15 +137,15 @@
         },
         {
             "name": "pcsc-lite",
-            "buildsystem": "autotools",
+            "buildsystem": "meson",
             "config-opts": [
-                "--disable-libudev",
-                "--disable-libsystemd",
-                "--disable-polkit",
-                "--without-systemdsystemunitdir",
-                "--disable-serial",
-                "--disable-usb",
-                "--disable-documentation"
+                "-Dlibsystemd=false",
+                "-Dlibudev=false",
+                "-Dlibusb=false",
+                "-Dpolkit=false",
+                "-Dserial=false",
+                "-Dsystemdunit=user",
+                "-Dusb=false"
             ],
             "cleanup": [
                 "/include",
