@@ -182,8 +182,8 @@
                         "x86_64"
                     ],
                     "strip-components": 1,
-                    "url": "https://github.com/git-lfs/git-lfs/releases/download/v3.7.1/git-lfs-linux-amd64-v3.7.1.tar.gz",
-                    "sha256": "1c0b6ee5200ca708c5cebebb18fdeb0e1c98f1af5c1a9cba205a4c0ab5a5ec08",
+                    "url": "https://github.com/git-lfs/git-lfs/releases/download/v3.8.0/git-lfs-linux-amd64-v3.8.0.tar.gz",
+                    "sha256": "e455e00f15d9b95661b8d53498ffb0c3367962cf1ec73c31ab7369516cd6ab8d",
                     "x-checker-data": {
                         "type": "json",
                         "url": "https://api.github.com/repos/git-lfs/git-lfs/releases/latest",
@@ -197,8 +197,8 @@
                         "aarch64"
                     ],
                     "strip-components": 1,
-                    "url": "https://github.com/git-lfs/git-lfs/releases/download/v3.7.1/git-lfs-linux-arm64-v3.7.1.tar.gz",
-                    "sha256": "73a9c90eeb4312133a63c3eaee0c38c019ea7bfa0953d174809d25b18588dd8d",
+                    "url": "https://github.com/git-lfs/git-lfs/releases/download/v3.8.0/git-lfs-linux-arm64-v3.8.0.tar.gz",
+                    "sha256": "ac9c8efac980bb0505ead384d087e2acb6486fd8498691a2165fa174ec6118c2",
                     "x-checker-data": {
                         "type": "json",
                         "url": "https://api.github.com/repos/git-lfs/git-lfs/releases/latest",
