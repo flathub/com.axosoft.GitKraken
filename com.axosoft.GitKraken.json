@@ -104,8 +104,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://github.com/krb5/krb5/archive/refs/tags/krb5-1.22.2-final.tar.gz",
-                    "sha256": "289f5bb81d1f2f8d5eecebe56a056aeed95d35fd9bb4a7071c5dd7ad4b3fe888",
+                    "url": "https://github.com/krb5/krb5/archive/refs/tags/krb5-1.22.3-final.tar.gz",
+                    "sha256": "4b1d2f8317e17a5848c62a1af460e00cdd6e8ef0fe267f6e6d1a4bc73a0e416d",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 13287,
@@ -238,8 +238,8 @@
                         "x86_64"
                     ],
                     "dest-filename": "gitkraken.deb",
-                    "url": "https://api.gitkraken.dev/releases/production/linux/x64/12.6.1/gitkraken-amd64.deb",
-                    "sha256": "83c2d39b1a33aa0ac27ecfcdc71f8f55f116f3a45da06188a7ce2597a0f10fba",
+                    "url": "https://api.gitkraken.dev/releases/production/linux/x64/12.6.2/gitkraken-amd64.deb",
+                    "sha256": "df18ef0e2197b887b4af419f4bb07dbaeefcd8c98965145c78401385903e5b67",
                     "x-checker-data": {
                         "type": "html",
                         "url": "https://help.gitkraken.com/gitkraken-desktop/current/",
@@ -253,8 +253,8 @@
                         "aarch64"
                     ],
                     "dest-filename": "gitkraken.deb",
-                    "url": "https://api.gitkraken.dev/releases/production/linux/arm64/12.6.1/gitkraken-aarch64.deb",
-                    "sha256": "9de8565b9cd32163acf4e2c3f26a424ea1994ba5efade362aaa513659ea8f923",
+                    "url": "https://api.gitkraken.dev/releases/production/linux/arm64/12.6.2/gitkraken-aarch64.deb",
+                    "sha256": "44f6e59e22d2f8e8bb4cb2c276b622cadf28d93423f901af8495dbc47a497dd6",
                     "x-checker-data": {
                         "type": "html",
                         "url": "https://help.gitkraken.com/gitkraken-desktop/current/",
@@ -268,9 +268,9 @@
                         "x86_64"
                     ],
                     "filename": "gitkraken.deb",
-                    "url": "https://api.gitkraken.dev/releases/production/linux/x64/12.6.1/gitkraken-amd64.deb",
-                    "sha256": "83c2d39b1a33aa0ac27ecfcdc71f8f55f116f3a45da06188a7ce2597a0f10fba",
-                    "size": 153238032,
+                    "url": "https://api.gitkraken.dev/releases/production/linux/x64/12.6.2/gitkraken-amd64.deb",
+                    "sha256": "df18ef0e2197b887b4af419f4bb07dbaeefcd8c98965145c78401385903e5b67",
+                    "size": 152516244,
                     "x-checker-data": {
                         "type": "html",
                         "url": "https://help.gitkraken.com/gitkraken-desktop/current/",
@@ -285,9 +285,9 @@
                         "aarch64"
                     ],
                     "filename": "gitkraken.deb",
-                    "url": "https://api.gitkraken.dev/releases/production/linux/arm64/12.6.1/gitkraken-aarch64.deb",
-                    "sha256": "9de8565b9cd32163acf4e2c3f26a424ea1994ba5efade362aaa513659ea8f923",
-                    "size": 159602124,
+                    "url": "https://api.gitkraken.dev/releases/production/linux/arm64/12.6.2/gitkraken-aarch64.deb",
+                    "sha256": "44f6e59e22d2f8e8bb4cb2c276b622cadf28d93423f901af8495dbc47a497dd6",
+                    "size": 158998000,
                     "x-checker-data": {
                         "type": "html",
                         "url": "https://help.gitkraken.com/gitkraken-desktop/current/",
