@@ -158,8 +158,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://salsa.debian.org/rousseau/PCSC/-/archive/2.5.3/PCSC-2.5.3.tar.bz2",
-                    "sha256": "d5e7a3a7d4243378c612233ef6681edaccab4ae509151f02d2040643f3b7e740",
+                    "url": "https://salsa.debian.org/rousseau/PCSC/-/archive/2.5.4/PCSC-2.5.4.tar.bz2",
+                    "sha256": "bc42a45496099c503a9a8819bd294c51b570a0c922b3df55716c789bd8d98ead",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 2611,
